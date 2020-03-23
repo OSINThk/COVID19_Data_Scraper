@@ -1,8 +1,7 @@
 import csv
-import bs4
-from locator import get_coodinates,Coordinates
+from locator import get_coodinates
+from crawler import get_wiki_Korea_numbers
 
-from bs4 import BeautifulSoup as soup
 
 
 
@@ -37,17 +36,11 @@ def load_country_repos(lst_countries):
 
 
 
-
-
-
-
 if __name__ == "__main__":
+
+    #print(page_soup.prettify())
+    get_wiki_Korea_numbers()
     lst_countries = get_countries_list()
     load_country_repos(lst_countries)
-
-
-
-
-
 
 
