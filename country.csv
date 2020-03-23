@@ -1,0 +1,20 @@
+['Seoul'] |<locator.Coordinates object at 0x042D4C40>| |<locator.Coordinates object at 0x042D4C40>| 324
+['Busan'] |<locator.Coordinates object at 0x042D4BE0>| |<locator.Coordinates object at 0x042D4BE0>| 108
+['Daegu'] |<locator.Coordinates object at 0x042D4970>| |<locator.Coordinates object at 0x042D4970>| 6,387
+['Incheon'] |<locator.Coordinates object at 0x042D4A78>| |<locator.Coordinates object at 0x042D4A78>| 40
+['Gwangju'] |<locator.Coordinates object at 0x042D4940>| |<locator.Coordinates object at 0x042D4940>| 19
+['Daejeon'] |<locator.Coordinates object at 0x042D4AF0>| |<locator.Coordinates object at 0x042D4AF0>| 24
+['Ulsan'] |<locator.Coordinates object at 0x042DE430>| |<locator.Coordinates object at 0x042DE430>| 36
+['Sejong'] |<locator.Coordinates object at 0x042DE628>| |<locator.Coordinates object at 0x042DE628>| 41
+['Gyeonggi'] |<locator.Coordinates object at 0x042DE040>| |<locator.Coordinates object at 0x042DE040>| 337
+['Gangwon'] |<locator.Coordinates object at 0x042DE238>| |<locator.Coordinates object at 0x042DE238>| 30
+['Chungbuk'] |<locator.Coordinates object at 0x042DE640>| |<locator.Coordinates object at 0x042DE640>| 35
+['Chungnam'] |<locator.Coordinates object at 0x042DE6A0>| |<locator.Coordinates object at 0x042DE6A0>| 120
+['Jeonbuk'] 0 0 10
+['Jeonnam'] |<locator.Coordinates object at 0x042DE9B8>| |<locator.Coordinates object at 0x042DE9B8>| 6
+['Gyeongbuk'] |<locator.Coordinates object at 0x042DE8E0>| |<locator.Coordinates object at 0x042DE8E0>| 1,254
+['Gyeongnam'] |<locator.Coordinates object at 0x042DE8B0>| |<locator.Coordinates object at 0x042DE8B0>| 88
+['Jeju'] |<locator.Coordinates object at 0x042DE508>| |<locator.Coordinates object at 0x042DE508>| 4
+|['Airport', 'Screening']| |<locator.Coordinates object at 0x042DE4F0>| |<locator.Coordinates object at 0x042DE4F0>| 34
+['Total'] |<locator.Coordinates object at 0x042DE070>| |<locator.Coordinates object at 0x042DE070>| 8,897
+ 0 0 |Data as of 2020/03/22 00:00 KST.|

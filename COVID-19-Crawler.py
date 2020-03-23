@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
     #print(page_soup.prettify())
     get_wiki_Korea_numbers()
-    lst_countries = get_countries_list()
-    load_country_repos(lst_countries)
+   # lst_countries = get_countries_list()
+   # load_country_repos(lst_countries)
 
 
