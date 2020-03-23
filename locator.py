@@ -7,7 +7,7 @@ class Coordinates:
     long = ""
 
 def get_coodinates(country):
-    gmaps = GoogleMaps('AIzaSyCyVhylbOfEtkqyA5GL3le-BOZ3H24rPUs')
+    gmaps = GoogleMaps('')
     try:
         geocode_result = gmaps.geocode(country)
         coordinates = Coordinates()
