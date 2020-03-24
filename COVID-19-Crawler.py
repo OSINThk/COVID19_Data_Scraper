@@ -1,10 +1,6 @@
 import csv
-from locator import get_coodinates
+from locator import get_coodinates,get_geojson_polygon_coordinates
 from crawler import get_wiki_Korea_numbers
-
-
-
-
 
 class Country:
     values = 0
@@ -40,6 +36,7 @@ if __name__ == "__main__":
 
     #print(page_soup.prettify())
     get_wiki_Korea_numbers()
+    get_geojson_polygon_coordinates("", "")
    # lst_countries = get_countries_list()
    # load_country_repos(lst_countries)
 
