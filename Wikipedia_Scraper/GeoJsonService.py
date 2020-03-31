@@ -1,6 +1,11 @@
+import csv
+
 import requests
 import geojson
 import os
+
+from geojson import Point, Feature, FeatureCollection, dump
+from geopy import Nominatim
 
 
 class GeoJsonService(object):
@@ -74,3 +79,49 @@ class GeoJsonService(object):
             properties = features[0].get("properties", dict())
             return properties.get(key)
         return ""
+
+    def produce_geojson(self, input_file=None):
+        parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+        filepath = os.path.join(parent_dir_path, input_file)
+        features = []
+        with open(filepath, encoding='utf-8-sig') as csvfile:
+            csv_reader = csv.DictReader(csvfile)
+            for row in csv_reader:
+                try:
+                    row_feature = self.get_features_for_row(row["country"], row["region"], row["infected"], row["deaths"],
+                                                       row["recoveries"], row["last_updated"])
+                except Exception as e:
+                    print(e, print(row["country"], row["region"], row["infected"], row["deaths"],
+                                   row["recoveries"]))
+                features.append(row_feature)
+        feature_collection = FeatureCollection(features)
+        with open('covid_data.geojson', 'w') as f:
+            dump(feature_collection, f)
+
+    def get_features_for_row(self, country, region, infected, deaths, recoveries, last_updated=None):
+        print(country, region, infected, deaths, recoveries)
+        lat, long = self.get_lat_long(country, region)
+        current = int(infected) - int(deaths) - int(recoveries)
+        current = str(current)
+        point = Point((long, lat))
+        feature = Feature(geometry=point,
+                          properties={
+                              "Country": country, "City": region, "Current Cases": current,
+                              "Total Cases": infected, "Deceased": deaths, "Recovered": recoveries,
+                              "Last Updated": last_updated
+                          })
+        return feature
+
+    @staticmethod
+    def get_lat_long(country, region):
+        if region == "":
+            q = f"{country}"
+        else:
+            q = f"{region}, {country}"
+
+        geolocator = Nominatim(
+            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36")
+        location = geolocator.geocode(q, timeout=100)
+        lat, long = location.latitude, location.longitude
+        return lat, long
+

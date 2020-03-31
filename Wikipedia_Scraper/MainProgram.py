@@ -4,6 +4,7 @@ import re
 
 from WikipediaService import WikipediaService
 from GeoJsonService import GeoJsonService
+import datetime
 
 
 class MainProgram(object):
@@ -15,6 +16,7 @@ class MainProgram(object):
         self.geojson_file = geojson_input_file
         self.geojson_service = GeoJsonService()
         self.global_stats = None
+        self.last_updated = datetime.datetime.now()
 
     def cleanup(self):
         parent_dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -34,6 +36,7 @@ class MainProgram(object):
             self.global_stats = res
         for row in self.global_stats:
             if country in row[0]:
+                row[0] = ""
                 return row
         return None
 
@@ -71,22 +74,30 @@ class MainProgram(object):
         death = row["Deaths column"]
         recovered = row["Recovered column"]
         if wiki_url != "-" and table_text != "-":
-            scraper = WikipediaService(country=country, url=wiki_url)
-            rec = scraper.process_table(table_text, row_start, row_end, region, infected, death, recovered)
+            try:
+                scraper = WikipediaService(country=country, url=wiki_url)
+                rec = scraper.process_table(table_text, row_start, row_end, region, infected, death, recovered)
+            except Exception as e:
+                print(e)
+                res = self.get_global_stats(country)
+                if not res:
+                    res = ["No Data", "0", "0", "0"]
+                rec = [res]
         else:
             res = self.get_global_stats(country)
-            if res:
-                res[0] = ""
-            else:
+            if not res:
                 res = ["No Data", "0", "0", "0"]
             rec = [res]
         self.write_output_for_country(country, rec)
 
     def write_output_for_country(self, country, output):
         for row in output:
-            record = dict(country=self.sanitize_text(country), region=self.sanitize_text(row[0]),
-                          infected=self.sanitize_digit(row[1]), deaths=self.sanitize_digit(row[2]),
-                          recoveries=self.sanitize_digit(row[3]))
+            record = dict(country=self.sanitize_text(country),
+                          region=self.sanitize_text(row[0]),
+                          infected=self.sanitize_digit(row[1]),
+                          deaths=self.sanitize_digit(row[2]),
+                          recoveries=self.sanitize_digit(row[3]),
+                          last_updated=self.last_updated.strftime("%Y-%m-%d %H:%M:%S"))
             self.write_record_to_output(record)
 
     def produce_geojson_for_file(self, input_file=None):
@@ -99,10 +110,15 @@ class MainProgram(object):
             for row in csv_reader:
                 self.produce_geojson(row["country"], row["region"], row["infected"], row["deaths"], row["recoveries"])
 
+    def produce_geojson_for_file(self, input_file=None):
+        if input_file is None:
+            input_file = self.geojson_file
+        self.geojson_service.produce_geojson(input_file)
+
     def produce_geojson(self, country, region, infected, deaths, recoveries):
         print(country, region, infected, deaths, recoveries)
         geojson = self.geojson_service.get_geojson_polygon_coordinates(country, region)
-        if geojson != False:
+        if geojson:
             geojson = self.geojson_service.update_geojson(geojson, country, region, infected, deaths, recoveries)
             self.geojson_service.dump_geojson(geojson)
 
