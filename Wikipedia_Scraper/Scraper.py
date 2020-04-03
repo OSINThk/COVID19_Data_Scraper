@@ -15,7 +15,6 @@ class Scraper(object):
         for i, table in enumerate(tables):
             if string in str(table):
                 res.append(table)
-        print(f'{len(res)} occurences found for "{string}".')
         if first_record_only:
             return res[0] if res else None
         else:

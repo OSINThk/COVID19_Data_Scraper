@@ -27,29 +27,17 @@ def get_data():
 @app.route('/run', methods=['GET'])
 def run_scraper():
     """
-    Runs the scraper to create 'covid_output.csv' file and updates 'covid_data.geojson' file.
+    Runs the scraper to create 'scraper_output.csv' file and then
+    uses this and 'static_output.csv' to create 'covid_data.geojson' file.
     :return: Response
     """
     start = time.time()
-    m = MainProgram(input_file="wikipedia_input.csv", output_file="covid_output.csv")
+    m = MainProgram(input_file="wikipedia_input.csv", static_geojson_csv_file="static_output.csv",
+                    scraper_output_file="scraper_output.csv")
     m.run()
     end = time.time()
     elapsed_seconds = round(end - start, 2)
     return jsonify({"Message": f"Successfully completed scraping! Took {elapsed_seconds}s to update!"})
-
-
-@app.route('/update', methods=['GET'])
-def update_data():
-    """
-    Only updates 'covid_data.geojson' file from existing 'covid_output.csv' file.
-    :return: Response
-    """
-    start = time.time()
-    m = MainProgram(input_file="wikipedia_input.csv", output_file="covid_output.csv")
-    m.produce_geojson_for_file()
-    end = time.time()
-    elapsed_seconds = round(end - start, 2)
-    return jsonify({"Message": f"Successfully updated data! Took {elapsed_seconds}s to update!"})
 
 
 # A welcome message to test our server
