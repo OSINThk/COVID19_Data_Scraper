@@ -11,7 +11,7 @@ class WikipediaService(object):
     def get_global_stats(self):
         print(f"Fetching global stats.")
         self.scraper = Scraper(url="https://en.m.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic")
-        res = self.process_table("Template:2019–20 coronavirus pandemic data", "4", "-2", "2", "3", "4", "5")
+        res = self.process_table("Template:2019–20 coronavirus pandemic data", "2", "-2", "2", "3", "4", "5")
         return res
 
     def search_table(self, text):
