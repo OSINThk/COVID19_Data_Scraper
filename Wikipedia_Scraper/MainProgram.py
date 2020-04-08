@@ -41,6 +41,15 @@ class MainProgram(object):
                 return row
         return None
 
+    def get_total_stats(self):
+        if not self.global_stats:
+            scraper = WikipediaService()
+            res = scraper.get_global_stats()
+            self.global_stats = res
+        lst = self.global_stats[0]
+        d = dict(country="Global",total=self.sanitize_digit(lst[1]),recoveries=self.sanitize_digit(lst[2]),deaths=self.sanitize_digit(lst[3]))
+        return d
+
     def process_input_file(self):
         parent_dir_path = os.path.dirname(os.path.realpath(__file__))
         filepath = os.path.join(parent_dir_path, self.input_file)
@@ -156,4 +165,6 @@ class MainProgram(object):
 if __name__ == "__main__":
     m = MainProgram(input_file="wikipedia_input.csv", static_geojson_csv_file="static_output.csv",
                     scraper_output_file="scraper_output.csv")
+    print(m.get_total_stats())
     m.run()
+    #m.produce_geojson_for_files()
