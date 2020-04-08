@@ -46,8 +46,12 @@ class MainProgram(object):
             scraper = WikipediaService()
             res = scraper.get_global_stats()
             self.global_stats = res
-        lst = self.global_stats[0]
-        d = dict(country="Global",total=self.sanitize_digit(lst[1]),recoveries=self.sanitize_digit(lst[2]),deaths=self.sanitize_digit(lst[3]))
+        row = self.global_stats[0]
+        d = dict(country="Global",
+                 infected = self.sanitize_digit(row[1]),
+                 deaths = self.sanitize_digit(row[2]),
+                 recoveries = self.sanitize_digit(row[3]),
+                 last_updated=self.last_updated.strftime("%Y-%m-%d %H:%M:%S"))
         return d
 
     def process_input_file(self):
@@ -165,6 +169,5 @@ class MainProgram(object):
 if __name__ == "__main__":
     m = MainProgram(input_file="wikipedia_input.csv", static_geojson_csv_file="static_output.csv",
                     scraper_output_file="scraper_output.csv")
-    print(m.get_total_stats())
     m.run()
     #m.produce_geojson_for_files()
