@@ -1,0 +1,4889 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.305539,30.592849 ]
+    },
+    "properties": {
+    "Address":"武汉, 湖北省",
+    "cities__confirmedCount":50008
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.122426,32.009016 ]
+    },
+    "properties": {
+    "Address":"襄阳, 湖北省",
+    "cities__confirmedCount":1175
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.286471,30.691966 ]
+    },
+    "properties": {
+    "Address":"宜昌, 湖北省",
+    "cities__confirmedCount":931
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.423482,30.360882 ]
+    },
+    "properties": {
+    "Address":"仙桃, 湖北省",
+    "cities__confirmedCount":575
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.957037,30.917766 ]
+    },
+    "properties": {
+    "Address":"孝感, 湖北省",
+    "cities__confirmedCount":3518
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.872199,30.453667 ]
+    },
+    "properties": {
+    "Address":"黄冈, 湖北省",
+    "cities__confirmedCount":2907
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.239631,30.335237 ]
+    },
+    "properties": {
+    "Address":"荆州, 湖北省",
+    "cities__confirmedCount":1580
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.894843,30.39194 ]
+    },
+    "properties": {
+    "Address":"鄂州, 湖北省",
+    "cities__confirmedCount":1394
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.382458,31.690215 ]
+    },
+    "properties": {
+    "Address":"随州, 湖北省",
+    "cities__confirmedCount":1307
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.038835,30.20003 ]
+    },
+    "properties": {
+    "Address":"黄石, 湖北省",
+    "cities__confirmedCount":1015
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.199427,31.035395 ]
+    },
+    "properties": {
+    "Address":"荆门, 湖北省",
+    "cities__confirmedCount":928
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.322439,29.841438 ]
+    },
+    "properties": {
+    "Address":"咸宁, 湖北省",
+    "cities__confirmedCount":836
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.798266,32.629398 ]
+    },
+    "properties": {
+    "Address":"十堰, 湖北省",
+    "cities__confirmedCount":672
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.165862,30.653061 ]
+    },
+    "properties": {
+    "Address":"天门, 湖北省",
+    "cities__confirmedCount":496
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.488172,30.272156 ]
+    },
+    "properties": {
+    "Address":"恩施州, 湖北省",
+    "cities__confirmedCount":252
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.899762,30.402167 ]
+    },
+    "properties": {
+    "Address":"潜江, 湖北省",
+    "cities__confirmedCount":198
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.680447,31.743483 ]
+    },
+    "properties": {
+    "Address":"神农架林区, 湖北省",
+    "cities__confirmedCount":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.473701,31.230416 ]
+    },
+    "properties": {
+    "Address":"境外输入, 上海市",
+    "cities__confirmedCount":204
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.473701,31.230416 ]
+    },
+    "properties": {
+    "Address":"外地来沪, 上海市",
+    "cities__confirmedCount":111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.489612,31.405457 ]
+    },
+    "properties": {
+    "Address":"宝山区, 上海市",
+    "cities__confirmedCount":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.265374,31.375869 ]
+    },
+    "properties": {
+    "Address":"嘉定区, 上海市",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.544379,31.221517 ]
+    },
+    "properties": {
+    "Address":"浦东新区, 上海市",
+    "cities__confirmedCount":61
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.381716,31.112818 ]
+    },
+    "properties": {
+    "Address":"闵行区, 上海市",
+    "cities__confirmedCount":19
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.436539,31.188637 ]
+    },
+    "properties": {
+    "Address":"徐汇区, 上海市",
+    "cities__confirmedCount":18
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.455964,31.223427 ]
+    },
+    "properties": {
+    "Address":"静安区, 上海市",
+    "cities__confirmedCount":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.227747,31.032243 ]
+    },
+    "properties": {
+    "Address":"松江区, 上海市",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.424624,31.220367 ]
+    },
+    "properties": {
+    "Address":"长宁区, 上海市",
+    "cities__confirmedCount":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.395555,31.24984 ]
+    },
+    "properties": {
+    "Address":"普陀区, 上海市",
+    "cities__confirmedCount":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.525727,31.259822 ]
+    },
+    "properties": {
+    "Address":"杨浦区, 上海市",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.474042,30.917795 ]
+    },
+    "properties": {
+    "Address":"奉贤区, 上海市",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.505132,31.2646 ]
+    },
+    "properties": {
+    "Address":"虹口区, 上海市",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.484443,31.231763 ]
+    },
+    "properties": {
+    "Address":"黄浦区, 上海市",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.124178,31.150681 ]
+    },
+    "properties": {
+    "Address":"青浦区, 上海市",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.341969,30.741991 ]
+    },
+    "properties": {
+    "Address":"金山区, 上海市",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.397421,31.623728 ]
+    },
+    "properties": {
+    "Address":"崇明区, 上海市",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.473701,31.230416 ]
+    },
+    "properties": {
+    "Address":"待明确地区, 上海市",
+    "cities__confirmedCount":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.4073963,39.9041999 ]
+    },
+    "properties": {
+    "Address":"境外输入, 北京市",
+    "cities__confirmedCount":172
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.443107,39.921469 ]
+    },
+    "properties": {
+    "Address":"朝阳区, 北京市",
+    "cities__confirmedCount":72
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.298326,39.959953 ]
+    },
+    "properties": {
+    "Address":"海淀区, 北京市",
+    "cities__confirmedCount":64
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.365867,39.912288 ]
+    },
+    "properties": {
+    "Address":"西城区, 北京市",
+    "cities__confirmedCount":53
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.287149,39.858427 ]
+    },
+    "properties": {
+    "Address":"丰台区, 北京市",
+    "cities__confirmedCount":43
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.341395,39.726929 ]
+    },
+    "properties": {
+    "Address":"大兴区, 北京市",
+    "cities__confirmedCount":39
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.4073963,39.9041999 ]
+    },
+    "properties": {
+    "Address":"外地来京, 北京市",
+    "cities__confirmedCount":25
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.231203,40.220659 ]
+    },
+    "properties": {
+    "Address":"昌平区, 北京市",
+    "cities__confirmedCount":29
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.656434,39.909946 ]
+    },
+    "properties": {
+    "Address":"通州区, 北京市",
+    "cities__confirmedCount":19
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.143267,39.749144 ]
+    },
+    "properties": {
+    "Address":"房山区, 北京市",
+    "cities__confirmedCount":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.416357,39.928353 ]
+    },
+    "properties": {
+    "Address":"东城区, 北京市",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.631979,40.316304 ]
+    },
+    "properties": {
+    "Address":"怀柔区, 北京市",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.843066,40.376931 ]
+    },
+    "properties": {
+    "Address":"密云区, 北京市",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.222981,39.906611 ]
+    },
+    "properties": {
+    "Address":"石景山区, 北京市",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.102009,39.940646 ]
+    },
+    "properties": {
+    "Address":"门头沟区, 北京市",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.974848,40.456951 ]
+    },
+    "properties": {
+    "Address":"延庆区, 北京市",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.65465,40.130347 ]
+    },
+    "properties": {
+    "Address":"顺义区, 北京市",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.4073963,39.9041999 ]
+    },
+    "properties": {
+    "Address":"待明确地区, 北京市",
+    "cities__confirmedCount":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.264385,23.12911 ]
+    },
+    "properties": {
+    "Address":"广州, 广东省",
+    "cities__confirmedCount":464
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.057865,22.543096 ]
+    },
+    "properties": {
+    "Address":"深圳, 广东省",
+    "cities__confirmedCount":456
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.121435,23.021478 ]
+    },
+    "properties": {
+    "Address":"佛山, 广东省",
+    "cities__confirmedCount":96
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.576677,22.270978 ]
+    },
+    "properties": {
+    "Address":"珠海, 广东省",
+    "cities__confirmedCount":103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.372708,23.549701 ]
+    },
+    "properties": {
+    "Address":"揭阳, 广东省",
+    "cities__confirmedCount":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.359368,21.270702 ]
+    },
+    "properties": {
+    "Address":"湛江, 广东省",
+    "cities__confirmedCount":24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.681972,23.354091 ]
+    },
+    "properties": {
+    "Address":"汕头, 广东省",
+    "cities__confirmedCount":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.081508,22.579117 ]
+    },
+    "properties": {
+    "Address":"江门, 广东省",
+    "cities__confirmedCount":24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.465091,23.047191 ]
+    },
+    "properties": {
+    "Address":"肇庆, 广东省",
+    "cities__confirmedCount":20
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.122523,24.288578 ]
+    },
+    "properties": {
+    "Address":"梅州, 广东省",
+    "cities__confirmedCount":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.622756,23.656703 ]
+    },
+    "properties": {
+    "Address":"潮州, 广东省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.751799,23.020673 ]
+    },
+    "properties": {
+    "Address":"东莞, 广东省",
+    "cities__confirmedCount":100
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.39277,22.517585 ]
+    },
+    "properties": {
+    "Address":"中山, 广东省",
+    "cities__confirmedCount":68
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.415801,23.112257 ]
+    },
+    "properties": {
+    "Address":"惠州, 广东省",
+    "cities__confirmedCount":62
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.982232,21.857958 ]
+    },
+    "properties": {
+    "Address":"阳江, 广东省",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.925439,21.662991 ]
+    },
+    "properties": {
+    "Address":"茂名, 广东省",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.056042,23.681774 ]
+    },
+    "properties": {
+    "Address":"清远, 广东省",
+    "cities__confirmedCount":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.59762,24.810879 ]
+    },
+    "properties": {
+    "Address":"韶关, 广东省",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.375158,22.786186 ]
+    },
+    "properties": {
+    "Address":"汕尾, 广东省",
+    "cities__confirmedCount":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.700961,23.743685 ]
+    },
+    "properties": {
+    "Address":"河源, 广东省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.7632828,23.3790333 ]
+    },
+    "properties": {
+    "Address":"待明确地区, 广东省",
+    "cities__confirmedCount":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 128.738231,47.1216472 ]
+    },
+    "properties": {
+    "Address":"境外输入, 黑龙江省",
+    "cities__confirmedCount":87
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 126.534967,45.803775 ]
+    },
+    "properties": {
+    "Address":"哈尔滨, 黑龙江省",
+    "cities__confirmedCount":198
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 131.159133,46.646508 ]
+    },
+    "properties": {
+    "Address":"双鸭山, 黑龙江省",
+    "cities__confirmedCount":52
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 126.968887,46.653845 ]
+    },
+    "properties": {
+    "Address":"绥化, 黑龙江省",
+    "cities__confirmedCount":47
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 130.969333,45.295075 ]
+    },
+    "properties": {
+    "Address":"鸡西, 黑龙江省",
+    "cities__confirmedCount":46
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 123.918186,47.354348 ]
+    },
+    "properties": {
+    "Address":"齐齐哈尔, 黑龙江省",
+    "cities__confirmedCount":43
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.103784,46.589309 ]
+    },
+    "properties": {
+    "Address":"大庆, 黑龙江省",
+    "cities__confirmedCount":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 131.0031381,45.771726 ]
+    },
+    "properties": {
+    "Address":"七台河, 黑龙江省",
+    "cities__confirmedCount":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 130.3188779,46.799777 ]
+    },
+    "properties": {
+    "Address":"佳木斯, 黑龙江省",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.633168,44.551653 ]
+    },
+    "properties": {
+    "Address":"牡丹江, 黑龙江省",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 127.528293,50.245129 ]
+    },
+    "properties": {
+    "Address":"黑河, 黑龙江省",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 130.297964,47.349916 ]
+    },
+    "properties": {
+    "Address":"鹤岗, 黑龙江省",
+    "cities__confirmedCount":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 124.711526,52.335262 ]
+    },
+    "properties": {
+    "Address":"大兴安岭, 黑龙江省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 128.8411471,47.727536 ]
+    },
+    "properties": {
+    "Address":"伊春, 黑龙江省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.0594815,43.37822 ]
+    },
+    "properties": {
+    "Address":"境外输入人员, 内蒙古自治区",
+    "cities__confirmedCount":49
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.781327,39.608266 ]
+    },
+    "properties": {
+    "Address":"鄂尔多斯, 内蒙古自治区",
+    "cities__confirmedCount":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.840313,40.657978 ]
+    },
+    "properties": {
+    "Address":"包头, 内蒙古自治区",
+    "cities__confirmedCount":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.886931,42.25785 ]
+    },
+    "properties": {
+    "Address":"赤峰, 内蒙古自治区",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.0482221,43.933454 ]
+    },
+    "properties": {
+    "Address":"锡林郭勒盟, 内蒙古自治区",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.387657,40.743213 ]
+    },
+    "properties": {
+    "Address":"巴彦淖尔, 内蒙古自治区",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.749995,40.842356 ]
+    },
+    "properties": {
+    "Address":"呼和浩特, 内蒙古自治区",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.243444,43.65289 ]
+    },
+    "properties": {
+    "Address":"通辽, 内蒙古自治区",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.765607,49.211742 ]
+    },
+    "properties": {
+    "Address":"呼伦贝尔, 内蒙古自治区",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.132585,40.994785 ]
+    },
+    "properties": {
+    "Address":"乌兰察布, 内蒙古自治区",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.794216,39.655248 ]
+    },
+    "properties": {
+    "Address":"乌海市, 内蒙古自治区",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.037657,46.082462 ]
+    },
+    "properties": {
+    "Address":"兴安盟, 内蒙古自治区",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.9249002,26.4836842 ]
+    },
+    "properties": {
+    "Address":"境外输入人员, 福建省",
+    "cities__confirmedCount":55
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.296482,26.074478 ]
+    },
+    "properties": {
+    "Address":"福州, 福建省",
+    "cities__confirmedCount":72
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.007777,25.454084 ]
+    },
+    "properties": {
+    "Address":"莆田, 福建省",
+    "cities__confirmedCount":56
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.675675,24.874132 ]
+    },
+    "properties": {
+    "Address":"泉州, 福建省",
+    "cities__confirmedCount":47
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.089425,24.479833 ]
+    },
+    "properties": {
+    "Address":"厦门, 福建省",
+    "cities__confirmedCount":35
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.547932,26.665617 ]
+    },
+    "properties": {
+    "Address":"宁德, 福建省",
+    "cities__confirmedCount":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.647093,24.513025 ]
+    },
+    "properties": {
+    "Address":"漳州, 福建省",
+    "cities__confirmedCount":20
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.17771,26.641774 ]
+    },
+    "properties": {
+    "Address":"南平, 福建省",
+    "cities__confirmedCount":20
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.638678,26.263406 ]
+    },
+    "properties": {
+    "Address":"三明, 福建省",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.017536,25.075123 ]
+    },
+    "properties": {
+    "Address":"龙岩, 福建省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.7889248,29.1416432 ]
+    },
+    "properties": {
+    "Address":"境外输入, 浙江省",
+    "cities__confirmedCount":48
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.758543,30.753924 ]
+    },
+    "properties": {
+    "Address":"嘉兴, 浙江省",
+    "cities__confirmedCount":46
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.699361,27.993828 ]
+    },
+    "properties": {
+    "Address":"温州, 浙江省",
+    "cities__confirmedCount":504
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.15507,30.274084 ]
+    },
+    "properties": {
+    "Address":"杭州, 浙江省",
+    "cities__confirmedCount":181
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.54399,29.868336 ]
+    },
+    "properties": {
+    "Address":"宁波, 浙江省",
+    "cities__confirmedCount":157
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.42076,28.65638 ]
+    },
+    "properties": {
+    "Address":"台州, 浙江省",
+    "cities__confirmedCount":146
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.64742,29.079175 ]
+    },
+    "properties": {
+    "Address":"金华, 浙江省",
+    "cities__confirmedCount":55
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.586109,29.995762 ]
+    },
+    "properties": {
+    "Address":"绍兴, 浙江省",
+    "cities__confirmedCount":42
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.050231,29.091251 ]
+    },
+    "properties": {
+    "Address":"省十里丰监狱, 浙江省",
+    "cities__confirmedCount":36
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.922796,28.46763 ]
+    },
+    "properties": {
+    "Address":"丽水, 浙江省",
+    "cities__confirmedCount":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.859457,28.970079 ]
+    },
+    "properties": {
+    "Address":"衢州, 浙江省",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.086809,30.89441 ]
+    },
+    "properties": {
+    "Address":"湖州, 浙江省",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.207215,29.985295 ]
+    },
+    "properties": {
+    "Address":"舟山, 浙江省",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.8568586,37.2425649 ]
+    },
+    "properties": {
+    "Address":"境外输入, 山西省",
+    "cities__confirmedCount":30
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.752652,37.687357 ]
+    },
+    "properties": {
+    "Address":"晋中, 山西省",
+    "cities__confirmedCount":37
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.548879,37.87059 ]
+    },
+    "properties": {
+    "Address":"太原, 山西省",
+    "cities__confirmedCount":20
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.00746,35.026516 ]
+    },
+    "properties": {
+    "Address":"运城, 山西省",
+    "cities__confirmedCount":19
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.300129,40.076762 ]
+    },
+    "properties": {
+    "Address":"大同, 山西省",
+    "cities__confirmedCount":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.851831,35.490701 ]
+    },
+    "properties": {
+    "Address":"晋城, 山西省",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.116404,36.195409 ]
+    },
+    "properties": {
+    "Address":"长治, 山西省",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.432825,39.331595 ]
+    },
+    "properties": {
+    "Address":"朔州, 山西省",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.734174,38.416663 ]
+    },
+    "properties": {
+    "Address":"忻州, 山西省",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.144319,37.518314 ]
+    },
+    "properties": {
+    "Address":"吕梁, 山西省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.580519,37.856971 ]
+    },
+    "properties": {
+    "Address":"阳泉, 山西省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.518975,36.088005 ]
+    },
+    "properties": {
+    "Address":"临汾, 山西省",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.3616476,39.3433574 ]
+    },
+    "properties": {
+    "Address":"境外输入, 天津市",
+    "cities__confirmedCount":44
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.309863,39.717379 ]
+    },
+    "properties": {
+    "Address":"宝坻区, 天津市",
+    "cities__confirmedCount":60
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.251586,39.128291 ]
+    },
+    "properties": {
+    "Address":"河东区, 天津市",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.196648,39.147869 ]
+    },
+    "properties": {
+    "Address":"河北区, 天津市",
+    "cities__confirmedCount":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.135488,39.224791 ]
+    },
+    "properties": {
+    "Address":"北辰区, 天津市",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.150738,39.138202 ]
+    },
+    "properties": {
+    "Address":"南开区, 天津市",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.21451,39.116949 ]
+    },
+    "properties": {
+    "Address":"和平区, 天津市",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.3616476,39.3433574 ]
+    },
+    "properties": {
+    "Address":"外地来津, 天津市",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.314323,39.086569 ]
+    },
+    "properties": {
+    "Address":"东丽区, 天津市",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.826724,39.330087 ]
+    },
+    "properties": {
+    "Address":"宁河区, 天津市",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.223371,39.109563 ]
+    },
+    "properties": {
+    "Address":"河西区, 天津市",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.008826,39.141152 ]
+    },
+    "properties": {
+    "Address":"西青区, 天津市",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.710496,39.00366 ]
+    },
+    "properties": {
+    "Address":"滨海新区, 天津市",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.044387,39.384119 ]
+    },
+    "properties": {
+    "Address":"武清区, 天津市",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.151533,39.167345 ]
+    },
+    "properties": {
+    "Address":"红桥区, 天津市",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.35726,38.937928 ]
+    },
+    "properties": {
+    "Address":"津南区, 天津市",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.9249002,35.8939566 ]
+    },
+    "properties": {
+    "Address":"境外输入, 山东省",
+    "cities__confirmedCount":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.587282,35.414982 ]
+    },
+    "properties": {
+    "Address":"济宁, 山东省",
+    "cities__confirmedCount":260
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.382609,36.067108 ]
+    },
+    "properties": {
+    "Address":"青岛, 山东省",
+    "cities__confirmedCount":61
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.356414,35.104673 ]
+    },
+    "properties": {
+    "Address":"临沂, 山东省",
+    "cities__confirmedCount":49
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.120095,36.6512 ]
+    },
+    "properties": {
+    "Address":"济南, 山东省",
+    "cities__confirmedCount":47
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.447852,37.464539 ]
+    },
+    "properties": {
+    "Address":"烟台, 山东省",
+    "cities__confirmedCount":47
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.161748,36.706962 ]
+    },
+    "properties": {
+    "Address":"潍坊, 山东省",
+    "cities__confirmedCount":44
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.120419,37.513068 ]
+    },
+    "properties": {
+    "Address":"威海, 山东省",
+    "cities__confirmedCount":38
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.98546,36.45703 ]
+    },
+    "properties": {
+    "Address":"聊城, 山东省",
+    "cities__confirmedCount":38
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.357464,37.434092 ]
+    },
+    "properties": {
+    "Address":"德州, 山东省",
+    "cities__confirmedCount":37
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.087614,36.200252 ]
+    },
+    "properties": {
+    "Address":"泰安, 山东省",
+    "cities__confirmedCount":35
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.055019,36.813546 ]
+    },
+    "properties": {
+    "Address":"淄博, 山东省",
+    "cities__confirmedCount":30
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.323725,34.810487 ]
+    },
+    "properties": {
+    "Address":"枣庄, 山东省",
+    "cities__confirmedCount":24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.480656,35.23375 ]
+    },
+    "properties": {
+    "Address":"菏泽, 山东省",
+    "cities__confirmedCount":18
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.526925,35.416734 ]
+    },
+    "properties": {
+    "Address":"日照, 山东省",
+    "cities__confirmedCount":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.970699,37.38198 ]
+    },
+    "properties": {
+    "Address":"滨州, 山东省",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.9249002,35.8939566 ]
+    },
+    "properties": {
+    "Address":"待明确地区, 山东省",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.7889248,33.1401715 ]
+    },
+    "properties": {
+    "Address":"境外输入, 江苏省",
+    "cities__confirmedCount":20
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.796877,32.060255 ]
+    },
+    "properties": {
+    "Address":"南京, 江苏省",
+    "cities__confirmedCount":93
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.585289,31.298974 ]
+    },
+    "properties": {
+    "Address":"苏州, 江苏省",
+    "cities__confirmedCount":87
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.284124,34.205768 ]
+    },
+    "properties": {
+    "Address":"徐州, 江苏省",
+    "cities__confirmedCount":79
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.113185,33.551052 ]
+    },
+    "properties": {
+    "Address":"淮安, 江苏省",
+    "cities__confirmedCount":66
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.31191,31.491169 ]
+    },
+    "properties": {
+    "Address":"无锡, 江苏省",
+    "cities__confirmedCount":55
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.974061,31.811226 ]
+    },
+    "properties": {
+    "Address":"常州, 江苏省",
+    "cities__confirmedCount":51
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.221611,34.596653 ]
+    },
+    "properties": {
+    "Address":"连云港, 江苏省",
+    "cities__confirmedCount":48
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.894291,31.980171 ]
+    },
+    "properties": {
+    "Address":"南通, 江苏省",
+    "cities__confirmedCount":40
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.922933,32.455536 ]
+    },
+    "properties": {
+    "Address":"泰州, 江苏省",
+    "cities__confirmedCount":37
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.16366,33.347316 ]
+    },
+    "properties": {
+    "Address":"盐城, 江苏省",
+    "cities__confirmedCount":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.412939,32.394209 ]
+    },
+    "properties": {
+    "Address":"扬州, 江苏省",
+    "cities__confirmedCount":23
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.275198,33.963232 ]
+    },
+    "properties": {
+    "Address":"宿迁, 江苏省",
+    "cities__confirmedCount":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.425836,32.187849 ]
+    },
+    "properties": {
+    "Address":"镇江, 江苏省",
+    "cities__confirmedCount":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.066801,30.572815 ]
+    },
+    "properties": {
+    "Address":"成都, 四川省",
+    "cities__confirmedCount":165
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 101.96231,30.04952 ]
+    },
+    "properties": {
+    "Address":"甘孜州, 四川省",
+    "cities__confirmedCount":78
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.468023,31.209571 ]
+    },
+    "properties": {
+    "Address":"达州, 四川省",
+    "cities__confirmedCount":42
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.110698,30.837793 ]
+    },
+    "properties": {
+    "Address":"南充, 四川省",
+    "cities__confirmedCount":39
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.633088,30.456224 ]
+    },
+    "properties": {
+    "Address":"广安, 四川省",
+    "cities__confirmedCount":30
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.44174,28.871569 ]
+    },
+    "properties": {
+    "Address":"泸州, 四川省",
+    "cities__confirmedCount":24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.747477,31.867903 ]
+    },
+    "properties": {
+    "Address":"巴中, 四川省",
+    "cities__confirmedCount":24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.679004,31.46746 ]
+    },
+    "properties": {
+    "Address":"绵阳, 四川省",
+    "cities__confirmedCount":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.058433,29.580228 ]
+    },
+    "properties": {
+    "Address":"内江, 四川省",
+    "cities__confirmedCount":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.397894,31.126855 ]
+    },
+    "properties": {
+    "Address":"德阳, 四川省",
+    "cities__confirmedCount":18
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.592898,30.532847 ]
+    },
+    "properties": {
+    "Address":"遂宁, 四川省",
+    "cities__confirmedCount":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 101.718637,26.582347 ]
+    },
+    "properties": {
+    "Address":"攀枝花, 四川省",
+    "cities__confirmedCount":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 102.267712,27.88157 ]
+    },
+    "properties": {
+    "Address":"凉山州, 四川省",
+    "cities__confirmedCount":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.643159,28.751836 ]
+    },
+    "properties": {
+    "Address":"宜宾, 四川省",
+    "cities__confirmedCount":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.778442,29.33903 ]
+    },
+    "properties": {
+    "Address":"自贡, 四川省",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.848396,30.07728 ]
+    },
+    "properties": {
+    "Address":"眉山, 四川省",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.013261,29.980537 ]
+    },
+    "properties": {
+    "Address":"雅安, 四川省",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.843357,32.435435 ]
+    },
+    "properties": {
+    "Address":"广元, 四川省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.627636,30.128901 ]
+    },
+    "properties": {
+    "Address":"资阳, 四川省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.765678,29.552115 ]
+    },
+    "properties": {
+    "Address":"乐山, 四川省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 102.224653,31.899413 ]
+    },
+    "properties": {
+    "Address":"阿坝州, 四川省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.614682,38.914003 ]
+    },
+    "properties": {
+    "Address":"大连, 辽宁省",
+    "cities__confirmedCount":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 123.431472,41.805699 ]
+    },
+    "properties": {
+    "Address":"沈阳, 辽宁省",
+    "cities__confirmedCount":35
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 123.726035,42.223828 ]
+    },
+    "properties": {
+    "Address":"铁岭, 辽宁省",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.994329,41.108647 ]
+    },
+    "properties": {
+    "Address":"鞍山, 辽宁省",
+    "cities__confirmedCount":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 123.236944,41.267244 ]
+    },
+    "properties": {
+    "Address":"辽阳, 辽宁省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.1268459,41.095685 ]
+    },
+    "properties": {
+    "Address":"锦州, 辽宁省",
+    "cities__confirmedCount":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.83694,40.71104 ]
+    },
+    "properties": {
+    "Address":"葫芦岛, 辽宁省",
+    "cities__confirmedCount":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 124.35445,40.000787 ]
+    },
+    "properties": {
+    "Address":"丹东, 辽宁省",
+    "cities__confirmedCount":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.070714,41.119997 ]
+    },
+    "properties": {
+    "Address":"盘锦, 辽宁省",
+    "cities__confirmedCount":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.670273,42.021602 ]
+    },
+    "properties": {
+    "Address":"阜新, 辽宁省",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.4493879,41.57365 ]
+    },
+    "properties": {
+    "Address":"朝阳, 辽宁省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 123.685142,41.486981 ]
+    },
+    "properties": {
+    "Address":"本溪, 辽宁省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.235084,40.667433 ]
+    },
+    "properties": {
+    "Address":"营口, 辽宁省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.5290376,41.9436543 ]
+    },
+    "properties": {
+    "Address":"境外输入, 辽宁省",
+    "cities__confirmedCount":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.9042208,37.8956594 ]
+    },
+    "properties": {
+    "Address":"境外输入, 河北省",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.180193,39.630867 ]
+    },
+    "properties": {
+    "Address":"唐山, 河北省",
+    "cities__confirmedCount":58
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.838834,38.304477 ]
+    },
+    "properties": {
+    "Address":"沧州, 河北省",
+    "cities__confirmedCount":48
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.886335,40.767544 ]
+    },
+    "properties": {
+    "Address":"张家口, 河北省",
+    "cities__confirmedCount":41
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.464589,38.874434 ]
+    },
+    "properties": {
+    "Address":"保定, 河北省",
+    "cities__confirmedCount":32
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.538961,36.625656 ]
+    },
+    "properties": {
+    "Address":"邯郸, 河北省",
+    "cities__confirmedCount":32
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.683752,39.538047 ]
+    },
+    "properties": {
+    "Address":"廊坊, 河北省",
+    "cities__confirmedCount":30
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.514893,38.042805 ]
+    },
+    "properties": {
+    "Address":"石家庄, 河北省",
+    "cities__confirmedCount":29
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.504677,37.070834 ]
+    },
+    "properties": {
+    "Address":"邢台, 河北省",
+    "cities__confirmedCount":23
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.600523,39.935361 ]
+    },
+    "properties": {
+    "Address":"秦皇岛, 河北省",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.670177,37.73892 ]
+    },
+    "properties": {
+    "Address":"衡水, 河北省",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.96275,40.952942 ]
+    },
+    "properties": {
+    "Address":"承德, 河北省",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 101.3431058,24.4752847 ]
+    },
+    "properties": {
+    "Address":"境外输入, 云南省",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 102.832891,24.880095 ]
+    },
+    "properties": {
+    "Address":"昆明, 云南省",
+    "cities__confirmedCount":53
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.717465,27.338257 ]
+    },
+    "properties": {
+    "Address":"昭通, 云南省",
+    "cities__confirmedCount":25
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.79715,22.00881 ]
+    },
+    "properties": {
+    "Address":"西双版纳, 云南省",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 102.527197,24.347324 ]
+    },
+    "properties": {
+    "Address":"玉溪, 云南省",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.796167,25.489999 ]
+    },
+    "properties": {
+    "Address":"曲靖, 云南省",
+    "cities__confirmedCount":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.267638,25.606486 ]
+    },
+    "properties": {
+    "Address":"大理州, 云南省",
+    "cities__confirmedCount":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.374576,23.36225 ]
+    },
+    "properties": {
+    "Address":"红河州, 云南省",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 99.161761,25.112046 ]
+    },
+    "properties": {
+    "Address":"保山, 云南省",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.22775,26.855047 ]
+    },
+    "properties": {
+    "Address":"丽江, 云南省",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 98.584895,24.433353 ]
+    },
+    "properties": {
+    "Address":"德宏州, 云南省",
+    "cities__confirmedCount":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.966512,22.825065 ]
+    },
+    "properties": {
+    "Address":"普洱, 云南省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 101.528068,25.045532 ]
+    },
+    "properties": {
+    "Address":"楚雄州, 云南省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.216248,23.400733 ]
+    },
+    "properties": {
+    "Address":"文山州, 云南省",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.088824,23.884154 ]
+    },
+    "properties": {
+    "Address":"临沧, 云南省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.1880047,35.3939908 ]
+    },
+    "properties": {
+    "Address":"境外输入, 陕西省",
+    "cities__confirmedCount":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.93977,34.341574 ]
+    },
+    "properties": {
+    "Address":"西安, 陕西省",
+    "cities__confirmedCount":120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.029022,32.684714 ]
+    },
+    "properties": {
+    "Address":"安康, 陕西省",
+    "cities__confirmedCount":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.023323,33.06748 ]
+    },
+    "properties": {
+    "Address":"汉中, 陕西省",
+    "cities__confirmedCount":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.708991,34.329605 ]
+    },
+    "properties": {
+    "Address":"咸阳, 陕西省",
+    "cities__confirmedCount":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.502882,34.49938 ]
+    },
+    "properties": {
+    "Address":"渭南, 陕西省",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.237743,34.363184 ]
+    },
+    "properties": {
+    "Address":"宝鸡, 陕西省",
+    "cities__confirmedCount":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.489757,36.585445 ]
+    },
+    "properties": {
+    "Address":"延安, 陕西省",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.945019,34.897887 ]
+    },
+    "properties": {
+    "Address":"铜川, 陕西省",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.940477,33.870422 ]
+    },
+    "properties": {
+    "Address":"商洛, 陕西省",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.734589,38.28539 ]
+    },
+    "properties": {
+    "Address":"榆林, 陕西省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.442846,35.476788 ]
+    },
+    "properties": {
+    "Address":"韩城, 陕西省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.084731,34.272117 ]
+    },
+    "properties": {
+    "Address":"杨凌, 陕西省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.4718681,42.909408 ]
+    },
+    "properties": {
+    "Address":"延边, 吉林省",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.323544,43.817071 ]
+    },
+    "properties": {
+    "Address":"长春, 吉林省",
+    "cities__confirmedCount":46
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 126.549572,43.837883 ]
+    },
+    "properties": {
+    "Address":"吉林市, 吉林省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.7108951,42.539287 ]
+    },
+    "properties": {
+    "Address":"梅河口, 吉林省",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 124.350398,43.166419 ]
+    },
+    "properties": {
+    "Address":"四平市, 吉林省",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.14366,42.887766 ]
+    },
+    "properties": {
+    "Address":"辽源, 吉林省",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 124.82283,43.504687 ]
+    },
+    "properties": {
+    "Address":"公主岭, 吉林省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.939697,41.728401 ]
+    },
+    "properties": {
+    "Address":"通化, 吉林省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 124.825117,45.141789 ]
+    },
+    "properties": {
+    "Address":"松原, 吉林省",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.838826,45.619588 ]
+    },
+    "properties": {
+    "Address":"白城, 吉林省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.2861116,35.7518326 ]
+    },
+    "properties": {
+    "Address":"境外输入, 甘肃省",
+    "cities__confirmedCount":47
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.834303,36.061089 ]
+    },
+    "properties": {
+    "Address":"兰州, 甘肃省",
+    "cities__confirmedCount":36
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.72498,34.580885 ]
+    },
+    "properties": {
+    "Address":"天水, 甘肃省",
+    "cities__confirmedCount":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.665131,35.543061 ]
+    },
+    "properties": {
+    "Address":"平凉, 甘肃省",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.626282,35.580662 ]
+    },
+    "properties": {
+    "Address":"定西, 甘肃省",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 102.911027,34.983385 ]
+    },
+    "properties": {
+    "Address":"甘南, 甘肃省",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.138586,36.545015 ]
+    },
+    "properties": {
+    "Address":"白银, 甘肃省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.921841,33.400684 ]
+    },
+    "properties": {
+    "Address":"陇南, 甘肃省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.643631,35.709077 ]
+    },
+    "properties": {
+    "Address":"庆阳, 甘肃省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.2086442,35.5872118 ]
+    },
+    "properties": {
+    "Address":"临夏, 甘肃省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.449818,38.925875 ]
+    },
+    "properties": {
+    "Address":"张掖, 甘肃省",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 102.188043,38.520089 ]
+    },
+    "properties": {
+    "Address":"金昌, 甘肃省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.2384017,30.7378118 ]
+    },
+    "properties": {
+    "Address":"省级（湖北输入）, 甘肃省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.912251,29.4315861 ]
+    },
+    "properties": {
+    "Address":"境外输入, 重庆市",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.408661,30.807667 ]
+    },
+    "properties": {
+    "Address":"万州区, 重庆市",
+    "cities__confirmedCount":118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.574271,29.606703 ]
+    },
+    "properties": {
+    "Address":"江北区, 重庆市",
+    "cities__confirmedCount":28
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.697324,30.930612 ]
+    },
+    "properties": {
+    "Address":"云阳县, 重庆市",
+    "cities__confirmedCount":25
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.27613,29.972084 ]
+    },
+    "properties": {
+    "Address":"合川区, 重庆市",
+    "cities__confirmedCount":23
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.651361,29.028066 ]
+    },
+    "properties": {
+    "Address":"綦江区, 重庆市",
+    "cities__confirmedCount":23
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.081282,29.857996 ]
+    },
+    "properties": {
+    "Address":"长寿区, 重庆市",
+    "cities__confirmedCount":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.463987,31.018498 ]
+    },
+    "properties": {
+    "Address":"奉节县, 重庆市",
+    "cities__confirmedCount":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.510676,29.502272 ]
+    },
+    "properties": {
+    "Address":"九龙坡区, 重庆市",
+    "cities__confirmedCount":21
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.3816532,31.2699214 ]
+    },
+    "properties": {
+    "Address":"开州区, 重庆市",
+    "cities__confirmedCount":21
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.039002,30.299559 ]
+    },
+    "properties": {
+    "Address":"忠县, 重庆市",
+    "cities__confirmedCount":21
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.568896,29.552736 ]
+    },
+    "properties": {
+    "Address":"渝中区, 重庆市",
+    "cities__confirmedCount":20
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.33339,30.327716 ]
+    },
+    "properties": {
+    "Address":"垫江县, 重庆市",
+    "cities__confirmedCount":20
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.840555,30.191013 ]
+    },
+    "properties": {
+    "Address":"潼南区, 重庆市",
+    "cities__confirmedCount":18
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.631187,29.718142 ]
+    },
+    "properties": {
+    "Address":"渝北区, 重庆市",
+    "cities__confirmedCount":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.5075522,29.6017886 ]
+    },
+    "properties": {
+    "Address":"两江新区, 重庆市",
+    "cities__confirmedCount":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.644428,29.500296 ]
+    },
+    "properties": {
+    "Address":"南岸区, 重庆市",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.114069,29.999285 ]
+    },
+    "properties": {
+    "Address":"石柱县, 重庆市",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.721733,29.707032 ]
+    },
+    "properties": {
+    "Address":"大足区, 重庆市",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.570062,31.398604 ]
+    },
+    "properties": {
+    "Address":"巫溪县, 重庆市",
+    "cities__confirmedCount":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.056404,29.844811 ]
+    },
+    "properties": {
+    "Address":"铜梁区, 重庆市",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.730894,29.8635 ]
+    },
+    "properties": {
+    "Address":"丰都县, 重庆市",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.879153,31.074834 ]
+    },
+    "properties": {
+    "Address":"巫山县, 重庆市",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.456877,29.541144 ]
+    },
+    "properties": {
+    "Address":"沙坪坝区, 重庆市",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.227305,29.592024 ]
+    },
+    "properties": {
+    "Address":"璧山区, 重庆市",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.594623,29.405002 ]
+    },
+    "properties": {
+    "Address":"荣昌区, 重庆市",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.482346,29.484527 ]
+    },
+    "properties": {
+    "Address":"大渡口区, 重庆市",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.540256,29.402408 ]
+    },
+    "properties": {
+    "Address":"巴南区, 重庆市",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.389298,29.703113 ]
+    },
+    "properties": {
+    "Address":"涪陵区, 重庆市",
+    "cities__confirmedCount":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.927375,29.356117 ]
+    },
+    "properties": {
+    "Address":"永川区, 重庆市",
+    "cities__confirmedCount":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.259281,29.290069 ]
+    },
+    "properties": {
+    "Address":"江津区, 重庆市",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.803911,30.674362 ]
+    },
+    "properties": {
+    "Address":"梁平区, 重庆市",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.4874971,29.5279566 ]
+    },
+    "properties": {
+    "Address":"高新区, 重庆市",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.770677,29.533609 ]
+    },
+    "properties": {
+    "Address":"黔江区, 重庆市",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.664214,31.947633 ]
+    },
+    "properties": {
+    "Address":"城口县, 重庆市",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.165537,29.293902 ]
+    },
+    "properties": {
+    "Address":"彭水县, 重庆市",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.760025,29.325601 ]
+    },
+    "properties": {
+    "Address":"武隆区, 重庆市",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.007094,28.447997 ]
+    },
+    "properties": {
+    "Address":"秀山县, 重庆市",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.767747,28.841244 ]
+    },
+    "properties": {
+    "Address":"酉阳县, 重庆市",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.92497,28.959502 ]
+    },
+    "properties": {
+    "Address":"万盛经开区, 重庆市",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.016536,33.580873 ]
+    },
+    "properties": {
+    "Address":"漯河, 河南省",
+    "cities__confirmedCount":36
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.3823545,34.2904302 ]
+    },
+    "properties": {
+    "Address":"境外输入, 河南省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.091192,32.147679 ]
+    },
+    "properties": {
+    "Address":"信阳, 河南省",
+    "cities__confirmedCount":274
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.625328,34.746611 ]
+    },
+    "properties": {
+    "Address":"郑州, 河南省",
+    "cities__confirmedCount":157
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.528308,32.990664 ]
+    },
+    "properties": {
+    "Address":"南阳, 河南省",
+    "cities__confirmedCount":156
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.022298,33.011529 ]
+    },
+    "properties": {
+    "Address":"驻马店, 河南省",
+    "cities__confirmedCount":139
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.656339,34.414961 ]
+    },
+    "properties": {
+    "Address":"商丘, 河南省",
+    "cities__confirmedCount":91
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.69695,33.626149 ]
+    },
+    "properties": {
+    "Address":"周口, 河南省",
+    "cities__confirmedCount":76
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.192661,33.766169 ]
+    },
+    "properties": {
+    "Address":"平顶山, 河南省",
+    "cities__confirmedCount":58
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.926763,35.303704 ]
+    },
+    "properties": {
+    "Address":"新乡, 河南省",
+    "cities__confirmedCount":57
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.392392,36.097577 ]
+    },
+    "properties": {
+    "Address":"安阳, 河南省",
+    "cities__confirmedCount":53
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.852454,34.035771 ]
+    },
+    "properties": {
+    "Address":"许昌, 河南省",
+    "cities__confirmedCount":39
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.241823,35.215892 ]
+    },
+    "properties": {
+    "Address":"焦作, 河南省",
+    "cities__confirmedCount":32
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.453926,34.620202 ]
+    },
+    "properties": {
+    "Address":"洛阳, 河南省",
+    "cities__confirmedCount":31
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.307582,34.797281 ]
+    },
+    "properties": {
+    "Address":"开封, 河南省",
+    "cities__confirmedCount":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.297201,35.748233 ]
+    },
+    "properties": {
+    "Address":"鹤壁, 河南省",
+    "cities__confirmedCount":19
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.029215,35.761829 ]
+    },
+    "properties": {
+    "Address":"濮阳, 河南省",
+    "cities__confirmedCount":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.200367,34.772792 ]
+    },
+    "properties": {
+    "Address":"三门峡, 河南省",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.601918,35.067243 ]
+    },
+    "properties": {
+    "Address":"济源, 河南省",
+    "cities__confirmedCount":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.8568586,27.6252995 ]
+    },
+    "properties": {
+    "Address":"境外输入, 湖南省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.938814,28.228209 ]
+    },
+    "properties": {
+    "Address":"长沙, 湖南省",
+    "cities__confirmedCount":242
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.12873,29.356803 ]
+    },
+    "properties": {
+    "Address":"岳阳, 湖南省",
+    "cities__confirmedCount":156
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.467674,27.23895 ]
+    },
+    "properties": {
+    "Address":"邵阳, 湖南省",
+    "cities__confirmedCount":102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.698784,29.031654 ]
+    },
+    "properties": {
+    "Address":"常德, 湖南省",
+    "cities__confirmedCount":82
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.133853,27.827986 ]
+    },
+    "properties": {
+    "Address":"株洲, 湖南省",
+    "cities__confirmedCount":80
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.993497,27.700062 ]
+    },
+    "properties": {
+    "Address":"娄底, 湖南省",
+    "cities__confirmedCount":76
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.35518,28.55386 ]
+    },
+    "properties": {
+    "Address":"益阳, 湖南省",
+    "cities__confirmedCount":60
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.572018,26.893368 ]
+    },
+    "properties": {
+    "Address":"衡阳, 湖南省",
+    "cities__confirmedCount":48
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.613445,26.420394 ]
+    },
+    "properties": {
+    "Address":"永州, 湖南省",
+    "cities__confirmedCount":44
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.001922,27.569517 ]
+    },
+    "properties": {
+    "Address":"怀化, 湖南省",
+    "cities__confirmedCount":40
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.014717,25.770509 ]
+    },
+    "properties": {
+    "Address":"郴州, 湖南省",
+    "cities__confirmedCount":39
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.944026,27.829795 ]
+    },
+    "properties": {
+    "Address":"湘潭, 湖南省",
+    "cities__confirmedCount":36
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.738781,28.312001 ]
+    },
+    "properties": {
+    "Address":"湘西自治州, 湖南省",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.479191,29.117096 ]
+    },
+    "properties": {
+    "Address":"张家界, 湖南省",
+    "cities__confirmedCount":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.9042208,27.0874564 ]
+    },
+    "properties": {
+    "Address":"境外输入, 江西省",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.858197,28.682892 ]
+    },
+    "properties": {
+    "Address":"南昌, 江西省",
+    "cities__confirmedCount":230
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.917346,27.817808 ]
+    },
+    "properties": {
+    "Address":"新余, 江西省",
+    "cities__confirmedCount":130
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.943433,28.454862 ]
+    },
+    "properties": {
+    "Address":"上饶, 江西省",
+    "cities__confirmedCount":123
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.00193,29.705077 ]
+    },
+    "properties": {
+    "Address":"九江, 江西省",
+    "cities__confirmedCount":118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.416785,27.815743 ]
+    },
+    "properties": {
+    "Address":"宜春, 江西省",
+    "cities__confirmedCount":106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.933546,25.830694 ]
+    },
+    "properties": {
+    "Address":"赣州, 江西省",
+    "cities__confirmedCount":76
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.358181,27.949217 ]
+    },
+    "properties": {
+    "Address":"抚州, 江西省",
+    "cities__confirmedCount":72
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.854556,27.622768 ]
+    },
+    "properties": {
+    "Address":"萍乡, 江西省",
+    "cities__confirmedCount":33
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.964696,27.087637 ]
+    },
+    "properties": {
+    "Address":"吉安, 江西省",
+    "cities__confirmedCount":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.069202,28.260189 ]
+    },
+    "properties": {
+    "Address":"鹰潭, 江西省",
+    "cities__confirmedCount":18
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.178443,29.268783 ]
+    },
+    "properties": {
+    "Address":"景德镇, 江西省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.9042208,27.0874564 ]
+    },
+    "properties": {
+    "Address":"赣江新区, 江西省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.2902839,26.8429645 ]
+    },
+    "properties": {
+    "Address":"境外输入, 贵州省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.630153,26.647661 ]
+    },
+    "properties": {
+    "Address":"贵阳, 贵州省",
+    "cities__confirmedCount":36
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.927389,27.725654 ]
+    },
+    "properties": {
+    "Address":"遵义, 贵州省",
+    "cities__confirmedCount":32
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.291643,27.283955 ]
+    },
+    "properties": {
+    "Address":"毕节, 贵州省",
+    "cities__confirmedCount":23
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.522097,26.254092 ]
+    },
+    "properties": {
+    "Address":"黔南州, 贵州省",
+    "cities__confirmedCount":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.830359,26.592666 ]
+    },
+    "properties": {
+    "Address":"六盘水, 贵州省",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.189598,27.731514 ]
+    },
+    "properties": {
+    "Address":"铜仁, 贵州省",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.982859,26.583442 ]
+    },
+    "properties": {
+    "Address":"黔东南州, 贵州省",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.947595,26.253088 ]
+    },
+    "properties": {
+    "Address":"安顺, 贵州省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.906397,25.087856 ]
+    },
+    "properties": {
+    "Address":"黔西南州, 贵州省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.227219,31.820591 ]
+    },
+    "properties": {
+    "Address":"合肥, 安徽省",
+    "cities__confirmedCount":174
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.389719,32.916287 ]
+    },
+    "properties": {
+    "Address":"蚌埠, 安徽省",
+    "cities__confirmedCount":160
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.814504,32.890479 ]
+    },
+    "properties": {
+    "Address":"阜阳, 安徽省",
+    "cities__confirmedCount":155
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.778676,33.844582 ]
+    },
+    "properties": {
+    "Address":"亳州, 安徽省",
+    "cities__confirmedCount":108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.115101,30.531919 ]
+    },
+    "properties": {
+    "Address":"安庆, 安徽省",
+    "cities__confirmedCount":83
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.521442,31.734476 ]
+    },
+    "properties": {
+    "Address":"六安, 安徽省",
+    "cities__confirmedCount":69
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.964358,33.646357 ]
+    },
+    "properties": {
+    "Address":"宿州, 安徽省",
+    "cities__confirmedCount":41
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.507011,31.67044 ]
+    },
+    "properties": {
+    "Address":"马鞍山, 安徽省",
+    "cities__confirmedCount":38
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.432941,31.352859 ]
+    },
+    "properties": {
+    "Address":"芜湖, 安徽省",
+    "cities__confirmedCount":34
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.81154,30.945515 ]
+    },
+    "properties": {
+    "Address":"铜陵, 安徽省",
+    "cities__confirmedCount":29
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.798265,33.955844 ]
+    },
+    "properties": {
+    "Address":"淮北, 安徽省",
+    "cities__confirmedCount":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.999932,32.625478 ]
+    },
+    "properties": {
+    "Address":"淮南, 安徽省",
+    "cities__confirmedCount":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.489156,30.656037 ]
+    },
+    "properties": {
+    "Address":"池州, 安徽省",
+    "cities__confirmedCount":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.328321,32.253425 ]
+    },
+    "properties": {
+    "Address":"滁州, 安徽省",
+    "cities__confirmedCount":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.337521,29.714699 ]
+    },
+    "properties": {
+    "Address":"黄山, 安徽省",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.75868,30.940195 ]
+    },
+    "properties": {
+    "Address":"宣城, 安徽省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.366543,22.817002 ]
+    },
+    "properties": {
+    "Address":"南宁, 广西壮族自治区",
+    "cities__confirmedCount":55
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.120161,21.481291 ]
+    },
+    "properties": {
+    "Address":"北海, 广西壮族自治区",
+    "cities__confirmedCount":44
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.179953,25.234479 ]
+    },
+    "properties": {
+    "Address":"桂林, 广西壮族自治区",
+    "cities__confirmedCount":32
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.085261,24.692931 ]
+    },
+    "properties": {
+    "Address":"河池, 广西壮族自治区",
+    "cities__confirmedCount":28
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.428608,24.326292 ]
+    },
+    "properties": {
+    "Address":"柳州, 广西壮族自治区",
+    "cities__confirmedCount":24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.353846,21.68686 ]
+    },
+    "properties": {
+    "Address":"防城港, 广西壮族自治区",
+    "cities__confirmedCount":19
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.18122,22.654032 ]
+    },
+    "properties": {
+    "Address":"玉林, 广西壮族自治区",
+    "cities__confirmedCount":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.221465,23.750306 ]
+    },
+    "properties": {
+    "Address":"来宾, 广西壮族自治区",
+    "cities__confirmedCount":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.654146,21.979933 ]
+    },
+    "properties": {
+    "Address":"钦州, 广西壮族自治区",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.598926,23.11153 ]
+    },
+    "properties": {
+    "Address":"贵港, 广西壮族自治区",
+    "cities__confirmedCount":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.279115,23.476962 ]
+    },
+    "properties": {
+    "Address":"梧州, 广西壮族自治区",
+    "cities__confirmedCount":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.566694,24.403582 ]
+    },
+    "properties": {
+    "Address":"贺州, 广西壮族自治区",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.618283,23.902479 ]
+    },
+    "properties": {
+    "Address":"百色, 广西壮族自治区",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.8076195,23.7247599 ]
+    },
+    "properties": {
+    "Address":"境外输入, 广西壮族自治区",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.511909,18.252847 ]
+    },
+    "properties": {
+    "Address":"三亚, 海南省",
+    "cities__confirmedCount":54
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.198286,20.044412 ]
+    },
+    "properties": {
+    "Address":"海口, 海南省",
+    "cities__confirmedCount":39
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.580811,19.521134 ]
+    },
+    "properties": {
+    "Address":"儋州, 海南省",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.391073,18.795143 ]
+    },
+    "properties": {
+    "Address":"万宁, 海南省",
+    "cities__confirmedCount":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.006755,19.738521 ]
+    },
+    "properties": {
+    "Address":"澄迈, 海南省",
+    "cities__confirmedCount":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.055739,19.298184 ]
+    },
+    "properties": {
+    "Address":"昌江, 海南省",
+    "cities__confirmedCount":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.474648,19.258341 ]
+    },
+    "properties": {
+    "Address":"琼海, 海南省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.690508,19.912025 ]
+    },
+    "properties": {
+    "Address":"临高, 海南省",
+    "cities__confirmedCount":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.037503,18.506048 ]
+    },
+    "properties": {
+    "Address":"陵水, 海南省",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.35889,19.681434 ]
+    },
+    "properties": {
+    "Address":"定安, 海南省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.797759,19.543278 ]
+    },
+    "properties": {
+    "Address":"文昌, 海南省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.651815,19.09535 ]
+    },
+    "properties": {
+    "Address":"东方, 海南省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.70259,18.63913 ]
+    },
+    "properties": {
+    "Address":"保亭, 海南省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.173054,18.750259 ]
+    },
+    "properties": {
+    "Address":"乐东, 海南省",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.838389,19.033369 ]
+    },
+    "properties": {
+    "Address":"琼中, 海南省",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 87.616848,43.825592 ]
+    },
+    "properties": {
+    "Address":"乌鲁木齐, 新疆维吾尔自治区",
+    "cities__confirmedCount":23
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 81.324136,43.916823 ]
+    },
+    "properties": {
+    "Address":"伊犁州, 新疆维吾尔自治区",
+    "cities__confirmedCount":18
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 79.9182287,37.0964672 ]
+    },
+    "properties": {
+    "Address":"兵团第四师, 新疆维吾尔自治区",
+    "cities__confirmedCount":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 86.0292,44.297051 ]
+    },
+    "properties": {
+    "Address":"兵团第八师石河子市, 新疆维吾尔自治区",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 79.9182287,37.0964672 ]
+    },
+    "properties": {
+    "Address":"兵团第九师, 新疆维吾尔自治区",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 87.308224,44.011182 ]
+    },
+    "properties": {
+    "Address":"昌吉州, 新疆维吾尔自治区",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 89.189752,42.951303 ]
+    },
+    "properties": {
+    "Address":"吐鲁番市, 新疆维吾尔自治区",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 86.145298,41.764115 ]
+    },
+    "properties": {
+    "Address":"巴州, 新疆维吾尔自治区",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 87.537902,43.913509 ]
+    },
+    "properties": {
+    "Address":"兵团第十二师, 新疆维吾尔自治区",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 87.543239,44.166755 ]
+    },
+    "properties": {
+    "Address":"兵团第六师五家渠市, 新疆维吾尔自治区",
+    "cities__confirmedCount":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 84.905039,44.42909 ]
+    },
+    "properties": {
+    "Address":"兵团第七师, 新疆维吾尔自治区",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 80.260605,41.168779 ]
+    },
+    "properties": {
+    "Address":"阿克苏地区, 新疆维吾尔自治区",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.230908,38.487193 ]
+    },
+    "properties": {
+    "Address":"银川, 宁夏回族自治区",
+    "cities__confirmedCount":36
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.198393,37.99746 ]
+    },
+    "properties": {
+    "Address":"吴忠, 宁夏回族自治区",
+    "cities__confirmedCount":28
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.24261,36.015855 ]
+    },
+    "properties": {
+    "Address":"固原, 宁夏回族自治区",
+    "cities__confirmedCount":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 105.196902,37.499972 ]
+    },
+    "properties": {
+    "Address":"中卫, 宁夏回族自治区",
+    "cities__confirmedCount":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.586163,38.16443 ]
+    },
+    "properties": {
+    "Address":"宁东, 宁夏回族自治区",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.383303,38.983236 ]
+    },
+    "properties": {
+    "Address":"石嘴山, 宁夏回族自治区",
+    "cities__confirmedCount":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 101.778223,36.617134 ]
+    },
+    "properties": {
+    "Address":"西宁, 青海省",
+    "cities__confirmedCount":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.900997,36.954413 ]
+    },
+    "properties": {
+    "Address":"海北州, 青海省",
+    "cities__confirmedCount":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 91.17211,29.652491 ]
+    },
+    "properties": {
+    "Address":"拉萨, 西藏自治区",
+    "cities__confirmedCount":1
+    }
+  }
+]
+}

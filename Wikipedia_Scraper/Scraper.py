@@ -2,24 +2,25 @@ import requests
 from bs4 import BeautifulSoup
 from itertools import product
 
+
 class Scraper(object):
-    def __init__(self,html_string=None,url=None):
+    def __init__(self, html_string=None, url=None):
         if url is not None:
             html_string = requests.get(url).content
         if html_string is not None:
             self.soup = BeautifulSoup(html_string, features="lxml")
-    
-    def find_table_with_text(self, string, first_record_only=True):
+
+    def find_table_with_text(self, string, index=0):
         tables = self.soup.findAll("table")
         res = []
         for i, table in enumerate(tables):
             if string in str(table):
                 res.append(table)
-        if first_record_only:
-            return res[0] if res else None
-        else:
-            return res
-    
+        return res[index] if res else None
+
+    def find_table_by_id(self, table_id):
+        return self.soup.find("table", {"id": table_id})
+
     def table_to_2d_list(self, table_tag):
         rowspans = []
         rows = table_tag.find_all('tr')

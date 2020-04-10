@@ -49,11 +49,12 @@ class GeoJsonService(object):
         except Exception as e:
             current = ""
         point = Point((float(long), float(lat)))
+        data_type = "Regional" if region else "National"
         feature = Feature(geometry=point,
                           properties={
                               "Country": country, "City": region, "Current Cases": current,
                               "Total Cases": infected, "Deceased": deaths, "Recovered": recoveries,
-                              "Last Updated": last_updated
+                              "Data Type":data_type, "Last Updated": last_updated
                           })
         return feature
 
