@@ -44,6 +44,11 @@ class WikipediaService(object):
             if recovered_col.isnumeric():
                 recovered = row[int(recovered_col) - 1]
                 recovered = recovered if recovered.strip() else "0"
-            d = [region, infected, deceased, recovered]
+            d = dict(
+                     region=region,
+                     infected=infected,
+                     deaths=deceased,
+                     recoveries=recovered,
+                     )
             result.append(d)
         return result

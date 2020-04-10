@@ -30,6 +30,7 @@ class MainProgram(object):
     def run(self):
         self.cleanup()
         self.process_input_file()
+        self.write_global_stats()
         self.process_data_for_thailand()
         self.produce_geojson_for_files()
 
@@ -39,7 +40,7 @@ class MainProgram(object):
             res = scraper.get_global_stats()
             self.global_stats = res
         for row in self.global_stats:
-            if country in row[0]:
+            if country in row["region"]:
                 row[0] = ""
                 return row
         return None
@@ -50,17 +51,16 @@ class MainProgram(object):
         self.global_stats = records
         self.write_records_to_file(records, "output/global.csv")
 
-
     def get_total_stats(self):
+
         if not self.global_stats:
-            scraper = WikipediaService()
-            res = scraper.get_global_stats()
-            self.global_stats = res
+            self.write_global_stats()
         row = self.global_stats[0]
         d = dict(country="Global",
-                 infected=self.sanitize_digit(row[1]),
-                 deaths=self.sanitize_digit(row[2]),
-                 recoveries=self.sanitize_digit(row[3]),
+                 infected=row["infected"],
+                 deaths=row["deaths"],
+                 recoveries=row["recoveries"],
+                 active=row["active"],
                  last_updated=self.last_updated.strftime("%Y-%m-%d %H:%M:%S"))
         return d
 
@@ -108,19 +108,9 @@ class MainProgram(object):
                 print(f"Fetching stats for {country}.")
                 scraper = WikipediaService(country=country, url=wiki_url)
                 rec = scraper.process_table(table_text, row_start, row_end, region, infected, death, recovered)
+                self.write_output_for_country(country, rec)
             except Exception as e:
                 print(e)
-                res = self.get_global_stats(country)
-                if not res:
-                    res = ["No Data", "0", "0", "0"]
-                rec = [res]
-        else:
-            res = self.get_global_stats(country)
-            print(f"Using global stats for {country}.")
-            if not res:
-                res = ["No Data", "0", "0", "0"]
-            rec = [res]
-        self.write_output_for_country(country, rec)
 
     def process_data_for_thailand(self):
         a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Thailand")
@@ -137,18 +127,23 @@ class MainProgram(object):
                             table_index=table_index)
         res = []
         for rec in z:
-            if "Total" not in rec[0]:
+            if "Total" not in rec.get("region"):
                 res.append(rec)
         self.write_output_for_country(country, res)
 
     def write_output_for_country(self, country, output):
         for row in output:
-            lat, long = self.geojson_service.get_lat_long(country, self.sanitize_text(row[0]))
+            region = self.sanitize_text(row.get("region", ""))
+            lat, long = self.geojson_service.get_lat_long(country, region)
             record = dict(country=self.sanitize_text(country),
-                          region=self.sanitize_text(row[0]),
-                          infected=self.sanitize_digit(row[1]),
-                          deaths=self.sanitize_digit(row[2]),
-                          recoveries=self.sanitize_digit(row[3]),
+                          region=region,
+                          infected=self.sanitize_digit(row.get("infected", "")),
+                          deaths=self.sanitize_digit(row.get("deaths", "")),
+                          recoveries=self.sanitize_digit(row.get("recoveries", "")),
+                          active=self.sanitize_digit(row.get("active", "")),
+                          total_per_mil=self.sanitize_digit(row.get("total_per_mil", "")),
+                          deaths_per_mil=self.sanitize_digit(row.get("deaths_per_mil", "")),
+                          total_tests=self.sanitize_digit(row.get("total_tests", "")),
                           long=long,
                           lat=lat,
                           last_updated=self.last_updated.strftime("%Y-%m-%d %H:%M:%S"))
@@ -203,6 +198,5 @@ class MainProgram(object):
 if __name__ == "__main__":
     m = MainProgram(input_file="wikipedia_input.csv", static_geojson_csv_file="output/static_output.csv",
                     scraper_output_file="output/scraper_output.csv")
-    #m.run()
-    #m.produce_geojson_for_files()
-    m.write_global_stats()
+    m.run()
+    # m.produce_geojson_for_files()

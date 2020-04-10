@@ -28,33 +28,42 @@ class GeoJsonService(object):
         features = []
         for row in rows:
             try:
-                row_feature = self.get_features_for_row(row["country"], row["region"], row["infected"],
-                                                        row["deaths"], row["recoveries"], row["long"],
-                                                        row["lat"], row["last_updated"])
-                features.append(row_feature)
+                row_feature = self.get_features_for_row(row.get("country",""), row.get("region",""), row.get("infected",""),
+                                                        row.get("deaths",""), row.get("recoveries",""), row.get("long",""),
+                                                        row.get("lat",""), row.get("last_updated",""),row.get("active",""),
+                                                        row.get("total_per_mil",""), row.get('deaths_per_mil',""),
+                                                        row.get('total_tests',""))
+                if row_feature:
+                    features.append(row_feature)
             except Exception as e:
-                print(e, print(row["country"], row["region"], row["infected"], row["deaths"],
-                               row["recoveries"], row["long"], row["lat"], row["last_updated"]))
+                print(e, row)
         feature_collection = FeatureCollection(features)
         parent_dir_path = os.path.dirname(os.path.realpath(__file__))
         filepath = os.path.join(parent_dir_path, output_file)
         with open(filepath, 'w', encoding='utf-8') as f:
             dump(feature_collection, f)
 
-    @staticmethod
-    def get_features_for_row(country, region, infected, deaths, recoveries, long, lat, last_updated):
-        try:
-            current = int(infected) - int(deaths) - int(recoveries)
-            current = str(current)
-        except Exception as e:
-            current = ""
+    def get_features_for_row(self, country, region, infected, deaths, recoveries, long, lat, last_updated, active="", total_per_mil="", deaths_per_mil="", total_tests=""):
+        if active:
+            current = str(active)
+        else:
+            try:
+                current = int(infected) - int(deaths) - int(recoveries)
+                current = str(current)
+            except Exception as e:
+                current = ""
+        if lat == "" or long == "":
+            lat, long = self.get_lat_long(country, region)
+        if not lat:
+            return
         point = Point((float(long), float(lat)))
         data_type = "Regional" if region else "National"
         feature = Feature(geometry=point,
                           properties={
-                              "Country": country, "City": region, "Current Cases": current,
+                              "Data Type":data_type, "Country": country, "City": region, "Current Cases": current,
                               "Total Cases": infected, "Deceased": deaths, "Recovered": recoveries,
-                              "Data Type":data_type, "Last Updated": last_updated
+                              "Total Cases/1M pop":total_per_mil, "Deaths/1M pop": deaths_per_mil,
+                              "Total Tests": total_tests, "Last Updated": last_updated
                           })
         return feature
 
@@ -77,7 +86,7 @@ class GeoJsonService(object):
             return lat, long
         except Exception as e:
             print(f"Exception processing {country}, {region}: {e}")
-            return "-", "-"
+            return "", ""
 
     def save_to_geocoding_db(self, country, region, lat, long):
         self.geocoding_db[(country, region)] = (lat, long)
