@@ -40,8 +40,7 @@ def get_new_data():
 
 @app.route('/global', methods=['GET'])
 def global_total():
-    m = MainProgram(input_file="wikipedia_input.csv", static_geojson_csv_file="static_output.csv",
-                    scraper_output_file="scraper_output.csv")
+    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="scraper_output.csv")
     global_data = m.get_total_stats()
     return jsonify(global_data)
 
@@ -54,8 +53,7 @@ def run_scraper():
     :return: Response
     """
     start = time.time()
-    m = MainProgram(input_file="wikipedia_input.csv", static_geojson_csv_file="static_output.csv",
-                    scraper_output_file="scraper_output.csv")
+    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="scraper_output.csv")
     m.run()
     end = time.time()
     elapsed_seconds = round(end - start, 2)

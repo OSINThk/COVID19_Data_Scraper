@@ -11,11 +11,9 @@ from WorldoMeterService import WorldoMeterService
 
 class MainProgram(object):
     def __init__(self, input_file="wikipedia_input.csv", scraper_output_file="scraper_output.csv",
-                 static_geojson_csv_file=None,
                  geojson_output_file="covid_data.geojson"):
         self.input_file = input_file
         self.scraper_output_file = scraper_output_file
-        self.static_geojson_csv_file = static_geojson_csv_file
         self.geojson_output_file = geojson_output_file
         self.geojson_service = GeoJsonService()
         self.global_stats = None
@@ -86,6 +84,7 @@ class MainProgram(object):
             writer.writerow(record)
 
     def write_records_to_file(self, records, file_name):
+        os.remove(file_name)
         for record in records:
             self.write_record_to_output(record, file_name)
 
@@ -229,7 +228,6 @@ class MainProgram(object):
 
 
 if __name__ == "__main__":
-    m = MainProgram(input_file="wikipedia_input.csv", static_geojson_csv_file="output/static_output.csv",
-                    scraper_output_file="output/scraper_output.csv")
+    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="output/scraper_output.csv")
     m.run()
     # m.produce_geojson_for_files()

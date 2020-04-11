@@ -62,8 +62,7 @@ class GeoJsonService(object):
                           properties={
                               "Data Type":data_type, "Country": country, "City": region, "Current Cases": current,
                               "Total Cases": infected, "Deceased": deaths, "Recovered": recoveries,
-                              "Total Cases/1M pop":total_per_mil, "Deaths/1M pop": deaths_per_mil,
-                              "Total Tests": total_tests, "Last Updated": last_updated
+                              "Last Updated": last_updated
                           })
         return feature
 
