@@ -24,6 +24,20 @@ def get_data():
     return jsonify(data)
 
 
+@app.route('/new_data', methods=['GET'])
+def get_new_data():
+    """
+    Returns the data from 'covid_data.geojson' file.
+    :return: 'covid_data.geojson' file
+    """
+    data = {}
+    parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+    filepath = os.path.join(parent_dir_path, "covid_data_new_data.geojson")
+    with open(filepath) as geojson_data:
+        data = json.load(geojson_data)
+    return jsonify(data)
+
+
 @app.route('/global', methods=['GET'])
 def global_total():
     m = MainProgram(input_file="wikipedia_input.csv", static_geojson_csv_file="static_output.csv",
