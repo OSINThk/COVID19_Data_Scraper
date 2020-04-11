@@ -32,6 +32,7 @@ class MainProgram(object):
         self.process_input_file()
         self.write_global_stats()
         self.process_data_for_thailand()
+        self.process_data_for_malaysia()
         self.produce_geojson_for_files()
 
     def get_global_stats(self, country):
@@ -111,6 +112,38 @@ class MainProgram(object):
                 self.write_output_for_country(country, rec)
             except Exception as e:
                 print(e)
+
+    def get_city_name(self, *args):
+        lst = []
+        for arg in args[::-1]:
+            if arg not in lst and 'Federal Territories' not in arg:
+                clean_arg = re.sub("[\(\[].*?[\)\]]", "", arg).strip()
+                lst.append(clean_arg)
+        city_name = ', '.join(lst).strip()
+        return city_name
+
+    def process_data_for_malaysia(self):
+        a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Malaysia")
+        country = "Malaysia"
+        table_text = "District/City"
+        start_row = "3"
+        table = a.search_table(table_text)
+        if start_row.isnumeric():
+            table = table[int(start_row) - 1:]
+        res = []
+        for row in table:
+            region = self.get_city_name(row[0], row[1])
+            if 'Unknown' in region:
+                continue
+            infected = row[-1]
+            d = dict(
+                region=region,
+                infected=infected,
+                deaths="0",
+                recoveries="0",
+            )
+            res.append(d)
+        self.write_output_for_country(country, res)
 
     def process_data_for_thailand(self):
         a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Thailand")

@@ -23,7 +23,6 @@ class WikipediaService(object):
     def process_table(self, table_name, start_row, end_row, region_col, infected_col, death_col, recovered_col,
                       table_index=None):
         if type(table_index) == str and table_index.isnumeric():
-            print(table_index)
             table = self.search_table(table_name, int(table_index) - 1)
         else:
             table = self.search_table(table_name)

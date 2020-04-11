@@ -86,6 +86,7 @@ class GeoJsonService(object):
             return lat, long
         except Exception as e:
             print(f"Exception processing {country}, {region}: {e}")
+            self.save_to_geocoding_db(country, region, "", "")
             return "", ""
 
     def save_to_geocoding_db(self, country, region, lat, long):
