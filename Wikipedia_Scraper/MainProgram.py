@@ -11,7 +11,7 @@ from WorldoMeterService import WorldoMeterService
 
 class MainProgram(object):
     def __init__(self, input_file="wikipedia_input.csv", scraper_output_file="scraper_output.csv",
-                 geojson_output_file="covid_data.geojson"):
+                 geojson_output_file="covid_data_new_data.geojson"):
         self.input_file = input_file
         self.scraper_output_file = scraper_output_file
         self.geojson_output_file = geojson_output_file

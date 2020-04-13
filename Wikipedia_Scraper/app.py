@@ -8,6 +8,7 @@ import os
 app = Flask(__name__)
 
 geojson_file = "covid_data.geojson"
+geojson_new_file = "covid_data_new_data.geojson"
 
 
 @app.route('/data', methods=['GET'])
@@ -24,7 +25,7 @@ def get_data():
     return jsonify(data)
 
 
-@app.route('/new_data', methods=['GET'])
+@app.route('/v2/data', methods=['GET'])
 def get_new_data():
     """
     Returns the data from 'covid_data.geojson' file.
