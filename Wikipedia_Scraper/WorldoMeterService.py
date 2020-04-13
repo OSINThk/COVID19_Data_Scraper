@@ -2,6 +2,7 @@ from Scraper import Scraper
 import datetime
 from collections import OrderedDict
 
+
 class WorldoMeterService(object):
     def __init__(self):
         self.url = "https://www.worldometers.info/coronavirus/#countries"
@@ -66,10 +67,7 @@ class WorldoMeterService(object):
                      active=active,
                      total_per_mil=total_per_mil,
                      deaths_per_mil=deaths_per_mil,
-                     total_tests=total_tests)
+                     total_tests=total_tests,
+                     last_updated=self.last_updated.strftime("%Y-%m-%d %H:%M:%S"))
             result.append(d)
         return result
-
-
-if __name__ == '__main__':
-    print(d)

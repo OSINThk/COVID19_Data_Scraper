@@ -4,6 +4,8 @@ import os
 from geojson import Point, Feature, FeatureCollection, dump
 from geopy import Nominatim
 
+from utils import sanitize_text, sanitize_digit
+
 
 class GeoJsonService(object):
     def __init__(self, geocoding_db_file="geocoding-db.csv"):
@@ -60,10 +62,10 @@ class GeoJsonService(object):
         data_type = "Regional" if region else "National"
         feature = Feature(geometry=point,
                           properties={
-                              "Data Type":data_type, "Country": country, "City": region, "Current Cases": current,
-                              "Total Cases": infected, "Deceased": deaths, "Recovered": recoveries,
-                              "Total Cases/1M pop":total_per_mil, "Deaths/1M pop": deaths_per_mil,
-                              "Total Tests": total_tests, "Last Updated": last_updated
+                              "Data Type": data_type, "Country": sanitize_text(country), "City": sanitize_text(region), "Current Cases": sanitize_digit(current),
+                              "Total Cases": sanitize_digit(infected), "Deceased": sanitize_digit(deaths), "Recovered": sanitize_digit(recoveries),
+                              "Total Cases/1M pop": sanitize_digit(total_per_mil), "Deaths/1M pop": sanitize_digit(deaths_per_mil),
+                              "Total Tests": sanitize_digit(total_tests), "Last Updated": last_updated
                           })
         return feature
 

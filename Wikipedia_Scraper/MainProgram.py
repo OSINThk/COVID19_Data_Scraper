@@ -4,6 +4,7 @@ import re
 
 from WikipediaService import WikipediaService
 from GeoJsonService import GeoJsonService
+from utils import sanitize_digit, sanitize_text
 import datetime
 
 from WorldoMeterService import WorldoMeterService
@@ -165,17 +166,17 @@ class MainProgram(object):
 
     def write_output_for_country(self, country, output):
         for row in output:
-            region = self.sanitize_text(row.get("region", ""))
+            region = sanitize_text(row.get("region", ""))
             lat, long = self.geojson_service.get_lat_long(country, region)
-            record = dict(country=self.sanitize_text(country),
+            record = dict(country=sanitize_text(country),
                           region=region,
-                          infected=self.sanitize_digit(row.get("infected", "")),
-                          deaths=self.sanitize_digit(row.get("deaths", "")),
-                          recoveries=self.sanitize_digit(row.get("recoveries", "")),
-                          active=self.sanitize_digit(row.get("active", "")),
-                          total_per_mil=self.sanitize_digit(row.get("total_per_mil", "")),
-                          deaths_per_mil=self.sanitize_digit(row.get("deaths_per_mil", "")),
-                          total_tests=self.sanitize_digit(row.get("total_tests", "")),
+                          infected=sanitize_digit(row.get("infected", "")),
+                          deaths=sanitize_digit(row.get("deaths", "")),
+                          recoveries=sanitize_digit(row.get("recoveries", "")),
+                          active=sanitize_digit(row.get("active", "")),
+                          total_per_mil=sanitize_digit(row.get("total_per_mil", "")),
+                          deaths_per_mil=sanitize_digit(row.get("deaths_per_mil", "")),
+                          total_tests=sanitize_digit(row.get("total_tests", "")),
                           long=long,
                           lat=lat,
                           last_updated=self.last_updated.strftime("%Y-%m-%d %H:%M:%S"))
@@ -198,33 +199,6 @@ class MainProgram(object):
                     rows.append(row)
         print("Creating geojson file.")
         self.geojson_service.produce_geojson_for_rows(rows)
-
-    @staticmethod
-    def sanitize_text(d):
-        RE = re.compile(r"""\[\[(File|Category):[\s\S]+\]\]|
-            \[\[[^|^\]]+\||
-            \[\[|
-            \]\]|
-            \'{2,5}|
-            (<s>|<!--)[\s\S]+(</s>|-->)|
-            {{[\s\S\n]+?}}|
-            <ref>[\s\S]+</ref>|
-            ={1,6}""", re.VERBOSE)
-        x = RE.sub('', d)
-        while '[' in x:
-            startidx = x.index('[')
-            endidx = x.rindex(']')
-            x = x[:startidx] + x[endidx + 1:]
-        x = x.replace('†', "").strip()
-        return x
-
-    @staticmethod
-    def sanitize_digit(d):
-        x = ''.join(c for c in d if c.isdigit())
-        if x:
-            return int(x)
-        else:
-            return 0
 
 
 if __name__ == "__main__":
