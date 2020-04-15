@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 geojson_file = "covid_data.geojson"
-geojson_new_file = "covid_data_new_data.geojson"
+geojson_new_file = "covid_data_v2.geojson"
 
 
 @app.route('/data', methods=['GET'])
