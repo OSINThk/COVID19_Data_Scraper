@@ -33,7 +33,7 @@ def get_new_data():
     """
     data = {}
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
-    filepath = os.path.join(parent_dir_path, "covid_data_v2.geojson")
+    filepath = os.path.join(parent_dir_path, geojson_new_file)
     with open(filepath) as geojson_data:
         data = json.load(geojson_data)
     return jsonify(data)
