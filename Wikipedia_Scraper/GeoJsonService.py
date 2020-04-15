@@ -26,7 +26,7 @@ class GeoJsonService(object):
                 long = row["long"]
                 self.geocoding_db[(country, region)] = (lat, long)
 
-    def produce_geojson_for_rows(self, rows, output_file="covid_data_new_data.geojson"):
+    def produce_geojson_for_rows(self, rows, output_file="covid_data_v2.geojson"):
         features = []
         for row in rows:
             try:

@@ -33,7 +33,7 @@ def get_new_data():
     """
     data = {}
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
-    filepath = os.path.join(parent_dir_path, "covid_data_new_data.geojson")
+    filepath = os.path.join(parent_dir_path, "covid_data_v2.geojson")
     with open(filepath) as geojson_data:
         data = json.load(geojson_data)
     return jsonify(data)
@@ -41,12 +41,12 @@ def get_new_data():
 
 @app.route('/global', methods=['GET'])
 def global_total():
-    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="scraper_output.csv")
+    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="wikipedia_output.csv")
     global_data = m.get_total_stats()
     return jsonify(global_data)
 
 
-@app.route('/run', methods=['GET'])
+@app.route('/update_data', methods=['GET'])
 def run_scraper():
     """
     Runs the scraper to create 'scraper_output.csv' file and then
@@ -54,7 +54,7 @@ def run_scraper():
     :return: Response
     """
     start = time.time()
-    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="scraper_output.csv")
+    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="wikipedia_output.csv")
     m.run()
     end = time.time()
     elapsed_seconds = round(end - start, 2)
