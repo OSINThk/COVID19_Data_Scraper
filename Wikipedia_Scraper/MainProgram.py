@@ -5,6 +5,7 @@ import re
 from MiscScrapers import MiscScrapers
 from WikipediaService import WikipediaService
 from GeoJsonService import GeoJsonService
+from aws_lib import upload_file_to_s3
 from utils import sanitize_digit, sanitize_text, cleanup, write_record_to_output, move_to_final
 import datetime
 
@@ -217,7 +218,20 @@ class MainProgram(object):
                 for row in csv_reader:
                     rows.append(row)
         print("Creating geojson file.")
-        self.geojson_service.produce_geojson_for_rows(rows)
+        self.geojson_service.produce_geojson_for_rows(rows, output_file="covid_data_v2.geojson")
+
+
+def lambda_handler(event=None, context=None):
+    import time
+    start = time.time()
+    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="wikipedia_output.csv")
+    m.run()
+    upload_file_to_s3("covid_data_v2.geojson")
+    end = time.time()
+    elapsed_seconds = round(end - start, 2)
+    message = f"Success! Took {elapsed_seconds}s!"
+    print(message)
+    return dict(message=message)
 
 
 if __name__ == "__main__":
