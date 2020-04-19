@@ -19,6 +19,8 @@ def get_data():
     """
     data = {}
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+    if '/var/task' in parent_dir_path:
+        parent_dir_path = os.getcwd()
     filepath = os.path.join(parent_dir_path, geojson_file)
     with open(filepath) as geojson_data:
         data = json.load(geojson_data)
@@ -33,6 +35,8 @@ def get_new_data():
     """
     data = {}
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+    if '/var/task' in parent_dir_path:
+        parent_dir_path = os.getcwd()
     filepath = os.path.join(parent_dir_path, geojson_new_file)
     with open(filepath) as geojson_data:
         data = json.load(geojson_data)

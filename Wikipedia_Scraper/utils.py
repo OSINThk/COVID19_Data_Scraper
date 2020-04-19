@@ -36,6 +36,8 @@ def sanitize_digit(d):
 def move_to_final(filename):
     file_name = filename.split('/')[-1]
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+    if '/var/task' in parent_dir_path:
+        parent_dir_path = os.getcwd()
     output_file_path = os.path.join(parent_dir_path, "output", file_name)
     final_file_path = os.path.join(parent_dir_path, "final", file_name)
     output_size = os.path.getsize(output_file_path)
@@ -51,6 +53,8 @@ def move_to_final(filename):
 
 def cleanup(filename):
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+    if '/var/task' in parent_dir_path:
+        parent_dir_path = os.getcwd()
     filepath = os.path.join(parent_dir_path, filename)
     if os.path.exists(filepath):
         os.remove(filepath)
@@ -59,6 +63,8 @@ def cleanup(filename):
 def write_record_to_output(record, filename):
     fields = record.keys()
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+    if '/var/task' in parent_dir_path:
+        parent_dir_path = os.getcwd()
     filepath = os.path.join(parent_dir_path, filename)
     mode = 'a' if os.path.exists(filepath) else "w"
     with open(filepath, mode, newline='', encoding='utf-8') as csvfile:

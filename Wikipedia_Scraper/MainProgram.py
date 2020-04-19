@@ -90,6 +90,8 @@ class MainProgram(object):
 
     def process_wikipedia_input(self):
         parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+        if '/var/task' in parent_dir_path:
+            parent_dir_path = os.getcwd()
         filepath = os.path.join(parent_dir_path, self.input_file)
         with open(filepath, encoding='utf-8') as csvfile:
             csv_reader = csv.DictReader(csvfile)
@@ -204,6 +206,8 @@ class MainProgram(object):
 
     def produce_geojson_for_files(self, input_files=None):
         parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+        if '/var/task' in parent_dir_path:
+            parent_dir_path = os.getcwd()
         output_dir = os.path.join(parent_dir_path, "final")
         if input_files is not None and type(input_files) == list:
             geojson_input_files = input_files
@@ -223,6 +227,13 @@ class MainProgram(object):
 
 def lambda_handler(event=None, context=None):
     import time
+    import shutil
+    curr_path = os.getcwd()
+    if '/var/task' in curr_path:
+        shutil.rmtree('/tmp/app', ignore_errors=True)
+        dest_path = '/tmp/app'
+        dest = shutil.copytree(curr_path, dest_path)
+        os.chdir(dest)
     start = time.time()
     m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="wikipedia_output.csv")
     m.run()
@@ -235,5 +246,4 @@ def lambda_handler(event=None, context=None):
 
 
 if __name__ == "__main__":
-    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="wikipedia_output.csv")
-    m.run()
+    lambda_handler()
