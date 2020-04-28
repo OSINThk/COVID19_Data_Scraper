@@ -4,11 +4,13 @@ import json
 from MainProgram import MainProgram
 import time
 import os
+from flask_cors import cross_origin
 
 app = Flask(__name__)
 
 geojson_file = "covid_data.geojson"
 geojson_new_file = "covid_data_v2.geojson"
+json_data_file = "covid_data_v3.json"
 
 
 @app.route('/data', methods=['GET'])
@@ -19,6 +21,8 @@ def get_data():
     """
     data = {}
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+    if '/var/task' in parent_dir_path:
+        parent_dir_path = os.getcwd()
     filepath = os.path.join(parent_dir_path, geojson_file)
     with open(filepath) as geojson_data:
         data = json.load(geojson_data)
@@ -33,7 +37,26 @@ def get_new_data():
     """
     data = {}
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+    if '/var/task' in parent_dir_path:
+        parent_dir_path = os.getcwd()
     filepath = os.path.join(parent_dir_path, geojson_new_file)
+    with open(filepath) as geojson_data:
+        data = json.load(geojson_data)
+    return jsonify(data)
+
+
+@app.route('/v3/data')
+@cross_origin()
+def get_data_v3():
+    """
+    Returns the data from 'covid_data.geojson' file.
+    :return: 'covid_data.geojson' file
+    """
+    data = {}
+    parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+    if '/var/task' in parent_dir_path:
+        parent_dir_path = os.getcwd()
+    filepath = os.path.join(parent_dir_path, json_data_file)
     with open(filepath) as geojson_data:
         data = json.load(geojson_data)
     return jsonify(data)

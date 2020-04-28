@@ -123,6 +123,10 @@ class MiscScrapers:
             self.write_to_file(country=country, region=region, infected=confirmed, deaths=deaths, recoveries=recoveries,
                                long=longitude, lat=latitude, filename=china_csv)
 
+    def copy_static_files(self):
+        move_to_final(philip_csv)
+        move_to_final(china_csv)
+
     def scrape_japan_data(self):
         print("Starting japan scrape")
         country = "Japan"
@@ -158,6 +162,7 @@ class MiscScrapers:
                 print(f"Error! Status Code: {r.status_code}. Data still not updated.")
                 curr_date = curr_date.subtract(days=1)
                 date_str = curr_date.strftime("%m-%d-%Y")
+                move_to_final(hopkins_csv)
                 return
 
         if r.status_code == 200:

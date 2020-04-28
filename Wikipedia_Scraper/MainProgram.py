@@ -5,6 +5,7 @@ import re
 from MiscScrapers import MiscScrapers
 from WikipediaService import WikipediaService
 from GeoJsonService import GeoJsonService
+from aws_lib import upload_file_to_s3
 from utils import sanitize_digit, sanitize_text, cleanup, write_record_to_output, move_to_final
 import datetime
 
@@ -13,7 +14,7 @@ from WorldoMeterService import WorldoMeterService
 
 class MainProgram(object):
     def __init__(self, input_file="wikipedia_input.csv", scraper_output_file="scraper_output.csv",
-                 geojson_output_file="covid_data_new_data.geojson"):
+                 geojson_output_file="covid_data_v2.geojson"):
         self.input_file = input_file
         self.scraper_output_file = scraper_output_file
         self.geojson_output_file = geojson_output_file
@@ -64,6 +65,7 @@ class MainProgram(object):
         self.misc_scrapers.scrape_john_hopkins_data()
         self.misc_scrapers.scrape_japan_data()
         self.misc_scrapers.scrape_taiwan_data()
+        self.misc_scrapers.copy_static_files()
 
     def process_global_stats(self):
         wms = WorldoMeterService()
@@ -192,17 +194,24 @@ class MainProgram(object):
                           infected=sanitize_digit(row.get("infected", "")),
                           deaths=sanitize_digit(row.get("deaths", "")),
                           recoveries=sanitize_digit(row.get("recoveries", "")),
-                          active=sanitize_digit(row.get("active", "")),
-                          total_per_mil=sanitize_digit(row.get("total_per_mil", "")),
-                          deaths_per_mil=sanitize_digit(row.get("deaths_per_mil", "")),
-                          total_tests=sanitize_digit(row.get("total_tests", "")),
                           long=long,
                           lat=lat,
                           last_updated=self.last_updated.strftime("%Y-%m-%d %H:%M:%S"))
+            if country is None:
+                record["active"] = sanitize_digit(row.get("active", ""))
+                record["total_per_mil"] = sanitize_digit(row.get("total_per_mil", ""))
+                record["deaths_per_mil"] = sanitize_digit(row.get("deaths_per_mil", ""))
+                record["total_tests"] = sanitize_digit(row.get("total_tests", ""))
+                record["active_per_mil"] = sanitize_digit(row.get("active_per_mil", ""))
+                record["recovered_per_mil"] = sanitize_digit(row.get("recovered_per_mil", ""))
+                record["new_cases"] = sanitize_digit(row.get("new_cases", ""))
+                record["new_deaths"] = sanitize_digit(row.get("new_deaths", ""))
             write_record_to_output(record, file_name)
 
     def produce_geojson_for_files(self, input_files=None):
         parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+        if '/var/task' in parent_dir_path:
+            parent_dir_path = os.getcwd()
         output_dir = os.path.join(parent_dir_path, "final")
         if input_files is not None and type(input_files) == list:
             geojson_input_files = input_files
@@ -217,7 +226,62 @@ class MainProgram(object):
                 for row in csv_reader:
                     rows.append(row)
         print("Creating geojson file.")
-        self.geojson_service.produce_geojson_for_rows(rows)
+        self.write_json_file(rows)
+        self.geojson_service.produce_geojson_for_rows(rows, output_file="covid_data_v2.geojson")
+
+    def write_json_file(self, rows):
+        parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+        if '/var/task' in parent_dir_path:
+            parent_dir_path = os.getcwd()
+        filepath = os.path.join(parent_dir_path, "covid_data_v3.json")
+        import json
+        processed_rows = []
+        for row in rows:
+            if row["region"] != "":
+                row["type"] = "reg"
+            else:
+                row["type"] = "nat"
+            active = row.get("active","")
+            if active:
+                active = str(active)
+            else:
+                try:
+                    current = int(row.get("infected")) - int(row.get("deaths")) - int(row.get("recoveries"))
+                    active = str(current)
+                except Exception as e:
+                    active = ""
+            row["active"] = active
+            if row["long"] and row["lat"]:
+                processed_rows.append(row)
+            else:
+                print(row)
+        with open(filepath, "w") as fout:
+            json.dump(processed_rows, fout)
+
+
+def lambda_handler(event=None, context=None):
+    import time
+    import shutil
+    curr_path = os.getcwd()
+    if '/var/task' in curr_path:
+        dest = "/tmp/app/"
+        dest_path = os.path.join(dest, "final")
+        os.makedirs(dest, exist_ok=True)
+        shutil.copytree(os.path.join(curr_path, "final"), dest_path)
+        os.makedirs(os.path.join(dest, "output"), exist_ok=True)
+        shutil.copy(os.path.join(curr_path, "wikipedia_input.csv"), "/tmp/app/wikipedia_input.csv")
+        shutil.copy(os.path.join(curr_path, "geocoding-db.csv"), "/tmp/app/geocoding-db.csv")
+        os.chdir(dest)
+    start = time.time()
+    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="wikipedia_output.csv")
+    m.run()
+    if '/var/task' in curr_path:
+        upload_file_to_s3("covid_data_v2.geojson")
+    end = time.time()
+    elapsed_seconds = round(end - start, 2)
+    message = f"Success! Took {elapsed_seconds}s!"
+    print(message)
+    return dict(message=message)
 
 
 if __name__ == "__main__":

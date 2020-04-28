@@ -16,6 +16,8 @@ class GeoJsonService(object):
 
     def load_geocoding_db(self):
         parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+        if '/var/task' in parent_dir_path:
+            parent_dir_path = os.getcwd()
         filepath = os.path.join(parent_dir_path, self.geocoding_db_file)
         with open(filepath, encoding='utf-8') as csvfile:
             csv_reader = csv.DictReader(csvfile)
@@ -41,6 +43,8 @@ class GeoJsonService(object):
                 print(e, row)
         feature_collection = FeatureCollection(features)
         parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+        if '/var/task' in parent_dir_path:
+            parent_dir_path = os.getcwd()
         filepath = os.path.join(parent_dir_path, output_file)
         with open(filepath, 'w', encoding='utf-8') as f:
             dump(feature_collection, f)
@@ -99,6 +103,8 @@ class GeoJsonService(object):
                       long=long)
         fields = record.keys()
         parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+        if '/var/task' in parent_dir_path:
+            parent_dir_path = os.getcwd()
         filepath = os.path.join(parent_dir_path, self.geocoding_db_file)
         mode = 'a' if os.path.exists(filepath) else "w"
         with open(filepath, mode, newline='', encoding='utf-8') as csvfile:
