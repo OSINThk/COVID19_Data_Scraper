@@ -24,6 +24,8 @@ def sanitize_text(d):
 
 def sanitize_digit(d):
     try:
+        if type(d) == int:
+            return str(d)
         x = ''.join(c for c in d if c.isdigit())
         if x:
             return str(int(x))
