@@ -41,13 +41,17 @@ def move_to_final(filename):
     if '/var/task' in parent_dir_path:
         parent_dir_path = os.getcwd()
     output_file_path = os.path.join(parent_dir_path, "output", file_name)
-    final_file_path = os.path.join(parent_dir_path, "final", file_name)
+    final_dir = os.path.join(parent_dir_path,"final")
+    os.makedirs(final_dir, exist_ok=True)
+    final_file_path = os.path.join(final_dir, file_name)
     output_size = os.path.getsize(output_file_path)
     if os.path.exists(final_file_path):
         final_size = os.path.getsize(final_file_path)
         if output_size > 0.9 * final_size:
             copyfile(output_file_path, final_file_path)
             print(f"File exists. Updated {file_name}.")
+        else:
+            print(f"File size changed for {file_name}. Please check.")
     else:
         copyfile(output_file_path, final_file_path)
         print(f"File doesn't exist. Created {file_name}.")
