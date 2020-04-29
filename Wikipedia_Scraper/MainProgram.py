@@ -26,6 +26,7 @@ class MainProgram(object):
             "malaysia": "malaysia.csv",
             "thailand": "thailand.csv",
             "global": "global.csv",
+            "philippines": "philippines.csv",
             "wikipedia": scraper_output_file,
             "default": scraper_output_file
         }
@@ -47,6 +48,7 @@ class MainProgram(object):
         self.process_global_stats()
         self.process_data_for_thailand()
         self.process_data_for_malaysia()
+        self.process_data_for_philippines()
         self.process_other_countries()
         self.produce_geojson_for_files()
 
@@ -157,6 +159,28 @@ class MainProgram(object):
         self.write_output_for_country(res, country=country, file_name=file_name)
         move_to_final(file_name)
 
+    def process_data_for_philippines(self):
+        a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_the_Philippines")
+        country = "Philippines"
+        table_name = "Confirmed COVID-19 cases in the Philippines by region"
+        start_row = "3"
+        end_row = "-3"
+        region_col = "1"
+        infected_col = "2"
+        death_col = "3"
+        recovered_col = "7"
+        table_index = "1"
+        z = a.process_table(table_name, start_row, end_row, region_col, infected_col, death_col, recovered_col,
+                            table_index=table_index)
+        res = []
+        for rec in z:
+            if "validation" not in rec.get("region"):
+                res.append(rec)
+        file_name = self.get_output_file(country)
+        cleanup(file_name)
+        self.write_output_for_country(res, country=country, file_name=file_name)
+        move_to_final(file_name)
+
     def process_data_for_thailand(self):
         a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Thailand")
         country = "Thailand"
@@ -234,8 +258,12 @@ class MainProgram(object):
         if '/var/task' in parent_dir_path:
             parent_dir_path = os.getcwd()
         filepath = os.path.join(parent_dir_path, "covid_data_v3.json")
+        global_filepath = os.path.join(parent_dir_path, "data_national.json")
+        reg_filepath = os.path.join(parent_dir_path, "data_regional.json")
         import json
         processed_rows = []
+        global_rows = []
+        regional_rows = []
         for row in rows:
             if row["region"] != "":
                 row["type"] = "reg"
@@ -253,10 +281,17 @@ class MainProgram(object):
             row["active"] = active
             if row["long"] and row["lat"]:
                 processed_rows.append(row)
-            else:
-                print(row)
+                if row["type"] == "reg":
+                    regional_rows.append(row)
+                else:
+                    global_rows.append(row)
+
         with open(filepath, "w") as fout:
             json.dump(processed_rows, fout)
+        with open(global_filepath, "w") as fout:
+            json.dump(global_rows, fout)
+        with open(reg_filepath, "w") as fout:
+            json.dump(regional_rows, fout)
 
 
 def lambda_handler(event=None, context=None):
