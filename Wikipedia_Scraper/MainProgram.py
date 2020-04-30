@@ -27,6 +27,7 @@ class MainProgram(object):
             "thailand": "thailand.csv",
             "global": "global.csv",
             "philippines": "philippines.csv",
+            "usa": "usa.csv",
             "wikipedia": scraper_output_file,
             "default": scraper_output_file
         }
@@ -46,6 +47,7 @@ class MainProgram(object):
     def run(self):
         self.process_wikipedia_input()
         self.process_global_stats()
+        self.process_data_for_usa()
         self.process_data_for_thailand()
         self.process_data_for_malaysia()
         self.process_data_for_philippines()
@@ -203,6 +205,15 @@ class MainProgram(object):
         self.write_output_for_country(res, country=country, file_name=file_name)
         move_to_final(file_name)
 
+    def process_data_for_usa(self):
+        wms = WorldoMeterService()
+        country = "USA"
+        records = wms.get_us_stats()
+        file_name = self.get_output_file(country)
+        cleanup(file_name)
+        self.write_output_for_country(records, country=country, file_name=file_name)
+        move_to_final(file_name)
+
     def write_output_for_country(self, output, country=None, file_name=None):
         if file_name is None:
             file_name = self.get_output_file("default")
@@ -269,7 +280,7 @@ class MainProgram(object):
                 row["type"] = "reg"
             else:
                 row["type"] = "nat"
-            active = row.get("active","")
+            active = row.get("active", "")
             if active:
                 active = str(active)
             else:

@@ -147,7 +147,7 @@ class MiscScrapers:
     def scrape_john_hopkins_data(self, date_str=None):
         print("Starting john hopkins scrape")
         excluded_countries = ["China"]
-        countries = ["Australia", "Canada", "China", "US"]
+        countries = ["Australia", "Canada", "China"]
         curr_date = pendulum.now()
         processed = False
         if not date_str:
