@@ -8,36 +8,19 @@ from flask_cors import cross_origin
 
 app = Flask(__name__)
 
-geojson_file = "covid_data.geojson"
 geojson_new_file = "covid_data_v2.geojson"
 json_data_file = "covid_data_v3.json"
 global_data_file = "data_national.json"
 regional_data_file = "data_regional.json"
 
 
-@app.route('/data', methods=['GET'])
-def get_data():
-    """
-    Returns the data from 'covid_data.geojson' file.
-    :return: 'covid_data.geojson' file
-    """
-    data = {}
-    parent_dir_path = os.path.dirname(os.path.realpath(__file__))
-    if '/var/task' in parent_dir_path:
-        parent_dir_path = os.getcwd()
-    filepath = os.path.join(parent_dir_path, geojson_file)
-    with open(filepath) as geojson_data:
-        data = json.load(geojson_data)
-    return jsonify(data)
-
-
-@app.route('/v2/data', methods=['GET'])
+@app.route('/v2/data')
+@cross_origin()
 def get_new_data():
     """
     Returns the data from 'covid_data.geojson' file.
     :return: 'covid_data.geojson' file
     """
-    data = {}
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
     if '/var/task' in parent_dir_path:
         parent_dir_path = os.getcwd()
@@ -54,7 +37,6 @@ def get_national_data():
     Returns the national data from 'covid_data.geojson' file.
     :return: 'covid_data.json' file
     """
-    data = {}
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
     if '/var/task' in parent_dir_path:
         parent_dir_path = os.getcwd()
@@ -71,7 +53,6 @@ def get_regional_data():
     Returns the regional data from 'covid_data.geojson' file.
     :return: 'covid_data.json' file
     """
-    data = {}
     parent_dir_path = os.path.dirname(os.path.realpath(__file__))
     if '/var/task' in parent_dir_path:
         parent_dir_path = os.getcwd()
