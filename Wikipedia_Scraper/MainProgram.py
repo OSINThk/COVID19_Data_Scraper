@@ -28,6 +28,7 @@ class MainProgram(object):
             "global": "global.csv",
             "philippines": "philippines.csv",
             "usa": "usa.csv",
+            "myanmar": "myanmar.csv",
             "wikipedia": scraper_output_file,
             "default": scraper_output_file
         }
@@ -48,9 +49,10 @@ class MainProgram(object):
         self.process_wikipedia_input()
         self.process_global_stats()
         self.process_data_for_usa()
-        self.process_data_for_thailand()
         self.process_data_for_malaysia()
+        self.process_data_for_myanmar()
         self.process_data_for_philippines()
+        self.process_data_for_thailand()
         self.process_other_countries()
         self.produce_geojson_for_files()
 
@@ -161,6 +163,33 @@ class MainProgram(object):
         self.write_output_for_country(res, country=country, file_name=file_name)
         move_to_final(file_name)
 
+    def process_data_for_myanmar(self):
+        a = WikipediaService(url="https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Myanmar")
+        country = "Myanmar"
+        table_text = "Confirmed COVID-19 cases by Township"
+        start_row = "3"
+        table = a.search_table(table_text, index=1)
+        if start_row.isnumeric():
+            table = table[int(start_row) - 1:]
+        res = []
+        for row in table:
+            region = self.get_city_name(row[1], row[2])
+            if 'Total' in region:
+                continue
+            infected = row[3]
+            deaths = row[-1]
+            d = dict(
+                region=region,
+                infected=sanitize_digit(infected),
+                deaths=sanitize_digit(deaths),
+                recoveries="0",
+            )
+            res.append(d)
+        file_name = self.get_output_file(country)
+        cleanup(file_name)
+        self.write_output_for_country(res, country=country, file_name=file_name)
+        move_to_final(file_name)
+
     def process_data_for_philippines(self):
         a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_the_Philippines")
         country = "Philippines"
@@ -213,6 +242,19 @@ class MainProgram(object):
         cleanup(file_name)
         self.write_output_for_country(records, country=country, file_name=file_name)
         move_to_final(file_name)
+
+    def get_active_for_row(self, row):
+        active = row.get("active", "")
+        if active:
+            return sanitize_digit(active)
+        else:
+            infected = int(sanitize_digit(row.get("infected", "")))
+            deaths = int(sanitize_digit(row.get("deaths", "")))
+            recoveries = int(sanitize_digit(row.get("recoveries", "")))
+            if deaths > infected or recoveries > infected:
+                print(row)
+            active = infected - deaths - recoveries
+            return str(active)
 
     def write_output_for_country(self, output, country=None, file_name=None):
         if file_name is None:
