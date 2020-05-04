@@ -20,7 +20,7 @@ philip_csv = "output/philippines.csv"
 
 class MiscScrapers:
     def __init__(self):
-        self.last_updated = datetime.datetime.now()
+        self.last_updated = datetime.datetime.utcnow()
         self.geojson_service = GeoJsonService()
 
     def write_to_file(self, country, region, infected="", deaths="", recoveries="", long="", lat="", filename=None):
@@ -164,7 +164,6 @@ class MiscScrapers:
                 date_str = curr_date.strftime("%m-%d-%Y")
                 move_to_final(hopkins_csv)
                 return
-
         if r.status_code == 200:
             req = StringIO(r.text)
             df = pd.read_csv(req).replace(np.nan, '', regex=True)

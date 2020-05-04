@@ -7,7 +7,7 @@ class WorldoMeterService(object):
     def __init__(self):
         self.url = "https://www.worldometers.info/coronavirus/#countries"
         self.scraper = Scraper(url=self.url)
-        self.last_updated = datetime.datetime.now()
+        self.last_updated = datetime.datetime.utcnow()
 
     def get_global_stats(self):
         print(f"Fetching global stats.")
@@ -83,7 +83,7 @@ class WorldoMeterService(object):
         for row in table:
             country = row[int(country_col) - 1]
             total = deceased = recovered = active = total_per_mil = total_tests = deaths_per_mil = "0"
-            active_per_mil = recovered_per_mil = new_cases = new_deaths = "0"
+            active_per_mil = recovered_per_mil = tests_per_mil = new_cases = new_deaths = "0"
             if total_col.isnumeric():
                 total = row[int(total_col) - 1]
                 total = total if total.strip() else "0"
@@ -109,6 +109,7 @@ class WorldoMeterService(object):
                 pop = int(sanitize_digit(total)) / int(sanitize_digit(total_per_mil))
                 active_per_mil = int(int(sanitize_digit(active)) / pop)
                 recovered_per_mil = int(int(sanitize_digit(recovered)) / pop)
+                tests_per_mil = int(int(sanitize_digit(total_tests)) / pop)
             if new_cases_col.isnumeric():
                 new_cases = row[int(new_cases_col) - 1]
                 new_cases = sanitize_digit(new_cases) if new_cases.strip() else "0"
@@ -126,6 +127,7 @@ class WorldoMeterService(object):
                      total_tests=total_tests,
                      active_per_mil=active_per_mil,
                      recovered_per_mil=recovered_per_mil,
+                     tests_per_mil=tests_per_mil,
                      new_cases=new_cases,
                      new_deaths=new_deaths,
                      last_updated=self.last_updated.strftime("%Y-%m-%d %H:%M:%S"))

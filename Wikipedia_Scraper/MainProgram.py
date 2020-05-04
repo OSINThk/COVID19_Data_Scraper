@@ -21,7 +21,7 @@ class MainProgram(object):
         self.geojson_service = GeoJsonService()
         self.misc_scrapers = MiscScrapers()
         self.global_stats = None
-        self.last_updated = datetime.datetime.now()
+        self.last_updated = datetime.datetime.utcnow()
         self.output_file_names = {
             "malaysia": "malaysia.csv",
             "thailand": "thailand.csv",
@@ -281,6 +281,7 @@ class MainProgram(object):
                 record["total_tests"] = sanitize_digit(row.get("total_tests", ""))
                 record["active_per_mil"] = sanitize_digit(row.get("active_per_mil", ""))
                 record["recovered_per_mil"] = sanitize_digit(row.get("recovered_per_mil", ""))
+                record["tests_per_mil"] = sanitize_digit(row.get("tests_per_mil", ""))
                 record["new_cases"] = sanitize_digit(row.get("new_cases", ""))
                 record["new_deaths"] = sanitize_digit(row.get("new_deaths", ""))
             write_record_to_output(record, file_name)
