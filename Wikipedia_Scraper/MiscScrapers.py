@@ -8,6 +8,7 @@ from io import StringIO
 import numpy as np
 
 from GeoJsonService import GeoJsonService
+from Scraper import Scraper
 from utils import write_record_to_output, cleanup, move_to_final
 
 columns = ["country", "region", "infected", "deaths", "recoveries", "long", "lat", "last_updated"]
@@ -77,6 +78,28 @@ class MiscScrapers:
                                long=longitude, lat=latitude, filename=philip_csv)
             print(f'"Philippines","{city}","{latitude}","{longitude}"')
 
+    def get_city_name(self, city):
+        city = city[:-16]
+        return city
+
+    def scrape_philippines_data(self):
+        s = Scraper(url="https://covid19stats.ph/stats/by-location")
+        table = s.find_table_with_text("Quezon")
+        lst = s.table_to_2d_list(table)
+        if not lst:
+            return []
+        country = "Philippines"
+        cleanup(philip_csv)
+        for row in lst[1:]:
+            city = self.get_city_name(row[0])
+            infected = row[1]
+            recovered = row[3]
+            deaths = row[5]
+            latitude, longitude = self.geojson_service.get_lat_long(country, city)
+            self.write_to_file(country=country, region=city, infected=infected, recoveries=recovered, deaths=deaths,
+                               long=longitude, lat=latitude, filename=philip_csv)
+        move_to_final(philip_csv)
+
     def scrape_taiwan_data(self):
         print("Starting taiwan scrape")
         country = "Taiwan"
@@ -124,7 +147,6 @@ class MiscScrapers:
                                long=longitude, lat=latitude, filename=china_csv)
 
     def copy_static_files(self):
-        move_to_final(philip_csv)
         move_to_final(china_csv)
 
     def scrape_japan_data(self):
@@ -198,7 +220,9 @@ class MiscScrapers:
         self.scrape_japan_data()
         print("Starting taiwan scrape")
         self.scrape_taiwan_data()
-        print("End taiwan scrape")
+        print("Starting philippines scrape")
+        self.scrape_philippines_data()
+        print("Scraping complete")
 
 
 if __name__ == '__main__':

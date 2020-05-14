@@ -51,7 +51,6 @@ class MainProgram(object):
         self.process_data_for_usa()
         self.process_data_for_malaysia()
         self.process_data_for_myanmar()
-        self.process_data_for_philippines()
         self.process_data_for_thailand()
         self.process_other_countries()
         self.produce_geojson_for_files()
@@ -71,6 +70,7 @@ class MainProgram(object):
         self.misc_scrapers.scrape_john_hopkins_data()
         self.misc_scrapers.scrape_japan_data()
         self.misc_scrapers.scrape_taiwan_data()
+        self.misc_scrapers.scrape_philippines_data()
         self.misc_scrapers.copy_static_files()
 
     def process_global_stats(self):
@@ -148,7 +148,7 @@ class MainProgram(object):
         res = []
         for row in table:
             region = self.get_city_name(row[0], row[1])
-            if 'Unknown' in region:
+            if 'Unknown' in region or 'Imported' in region:
                 continue
             infected = row[-1]
             d = dict(
