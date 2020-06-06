@@ -365,7 +365,9 @@ def lambda_handler(event=None, context=None):
     m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="wikipedia_output.csv")
     m.run()
     if '/var/task' in curr_path:
-        upload_file_to_s3("covid_data_v2.geojson")
+        upload_file_to_s3("covid_data_v3.json", "json","daily")
+        upload_file_to_s3("data_national.json", "national","daily")
+        upload_file_to_s3("data_regional.json", "regional","daily")
     end = time.time()
     elapsed_seconds = round(end - start, 2)
     message = f"Success! Took {elapsed_seconds}s!"

@@ -28,13 +28,16 @@ def upload_file(file_name, bucket, object_key=None):
     return True
 
 
-def upload_file_to_s3(fin):
+def upload_file_to_s3(fin,folder_name="geojson", date_format="hourly"):
     try:
         file_name = fin.rsplit('/', 1)[-1]
-        curr_date = datetime.datetime.utcnow().strftime("%d-%m-%y_%H-%M")
+        if date_format == "hourly":
+            curr_date = datetime.datetime.utcnow().strftime("%d-%m-%y_%H-%M")
+        else:
+            curr_date = datetime.datetime.utcnow().strftime("%d-%m-%Y")
         extension = file_name.split('.', 1)[-1]
         output_file_name = file_name.replace(f'.{extension}', f'-{curr_date}.{extension}')
-        object_key = f"geojson/{output_file_name}"
+        object_key = f"{folder_name}/{output_file_name}"
         upload_file(fin, "outbreak-asia", object_key)
     except Exception as e:
         print(e)
