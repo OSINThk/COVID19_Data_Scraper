@@ -1,5 +1,6 @@
 # app.py
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
+from threading import Thread
 import json
 from MainProgram import MainProgram
 import time
@@ -12,6 +13,19 @@ geojson_new_file = "covid_data_v2.geojson"
 json_data_file = "covid_data_v3.json"
 global_data_file = "data_national.json"
 regional_data_file = "data_regional.json"
+
+
+class BackgroundScraper(Thread):
+    def __init__(self):
+        Thread.__init__(self)
+
+    def run(self):
+        start = time.time()
+        m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="wikipedia_output.csv")
+        m.run()
+        end = time.time()
+        elapsed_seconds = round(end - start, 2)
+        print(f"Finished processing in {elapsed_seconds}s!")
 
 
 @app.route('/v2/data')
@@ -76,12 +90,9 @@ def run_scraper():
     uses this and 'static_output.csv' to create 'covid_data.geojson' file.
     :return: Response
     """
-    start = time.time()
-    m = MainProgram(input_file="wikipedia_input.csv", scraper_output_file="wikipedia_output.csv")
-    m.run()
-    end = time.time()
-    elapsed_seconds = round(end - start, 2)
-    return jsonify({"Message": f"Successfully completed scraping! Took {elapsed_seconds}s to update!"})
+    thread_a = BackgroundScraper()
+    thread_a.start()
+    return "Processing in background", 200
 
 
 # A welcome message to test our server
