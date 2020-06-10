@@ -67,10 +67,13 @@ class MainProgram(object):
         return None
 
     def process_other_countries(self):
-        self.misc_scrapers.scrape_john_hopkins_data()
-        self.misc_scrapers.scrape_japan_data()
-        self.misc_scrapers.scrape_taiwan_data()
-        self.misc_scrapers.scrape_philippines_data()
+        try:
+            self.misc_scrapers.scrape_john_hopkins_data()
+            self.misc_scrapers.scrape_japan_data()
+            self.misc_scrapers.scrape_taiwan_data()
+            self.misc_scrapers.scrape_philippines_data()
+        except Exception as e:
+            print(e)
         self.misc_scrapers.copy_static_files()
 
     def process_global_stats(self):
