@@ -77,14 +77,17 @@ class MainProgram(object):
         self.misc_scrapers.copy_static_files()
 
     def process_global_stats(self):
-        wms = WorldoMeterService()
-        country = "global"
-        records = wms.get_global_stats()
-        file_name = self.get_output_file(country)
-        cleanup(file_name)
-        self.global_stats = records
-        self.write_output_for_country(records, file_name=file_name)
-        move_to_final(file_name)
+        try:
+            wms = WorldoMeterService()
+            country = "global"
+            records = wms.get_global_stats()
+            file_name = self.get_output_file(country)
+            cleanup(file_name)
+            self.global_stats = records
+            self.write_output_for_country(records, file_name=file_name)
+            move_to_final(file_name)
+        except Exception as e:
+            print(f"Exception fetching global data: {e}")
 
     def get_total_stats(self):
         if not self.global_stats:
@@ -99,11 +102,14 @@ class MainProgram(object):
         return d
 
     def process_wikipedia_input(self):
-        parent_dir_path = os.path.dirname(os.path.realpath(__file__))
-        filepath = os.path.join(parent_dir_path, self.input_file)
-        with open(filepath, encoding='utf-8') as csvfile:
-            csv_reader = csv.DictReader(csvfile)
-            self.process_input(csv_reader)
+        try:
+            parent_dir_path = os.path.dirname(os.path.realpath(__file__))
+            filepath = os.path.join(parent_dir_path, self.input_file)
+            with open(filepath, encoding='utf-8') as csvfile:
+                csv_reader = csv.DictReader(csvfile)
+                self.process_input(csv_reader)
+        except Exception as e:
+            print(f"Exception fetching wikipedia data: {e}")
 
     def process_input(self, data):
         cleanup(self.get_output_file("wikipedia"))
@@ -141,57 +147,63 @@ class MainProgram(object):
         return city_name
 
     def process_data_for_malaysia(self):
-        a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Malaysia")
-        country = "Malaysia"
-        table_text = "District/City"
-        start_row = "3"
-        table = a.search_table(table_text)
-        if start_row.isnumeric():
-            table = table[int(start_row) - 1:]
-        res = []
-        for row in table:
-            region = self.get_city_name(row[0], row[1])
-            if 'Unknown' in region or 'Imported' in region:
-                continue
-            infected = row[-1]
-            d = dict(
-                region=region,
-                infected=infected,
-                deaths="0",
-                recoveries="0",
-            )
-            res.append(d)
-        file_name = self.get_output_file(country)
-        cleanup(file_name)
-        self.write_output_for_country(res, country=country, file_name=file_name)
-        move_to_final(file_name)
+        try:
+            a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Malaysia")
+            country = "Malaysia"
+            table_text = "District/City"
+            start_row = "3"
+            table = a.search_table(table_text)
+            if start_row.isnumeric():
+                table = table[int(start_row) - 1:]
+            res = []
+            for row in table:
+                region = self.get_city_name(row[0], row[1])
+                if 'Unknown' in region or 'Imported' in region:
+                    continue
+                infected = row[-1]
+                d = dict(
+                    region=region,
+                    infected=infected,
+                    deaths="0",
+                    recoveries="0",
+                )
+                res.append(d)
+            file_name = self.get_output_file(country)
+            cleanup(file_name)
+            self.write_output_for_country(res, country=country, file_name=file_name)
+            move_to_final(file_name)
+        except Exception as e:
+            print(f"Exception fetching malaysia data: {e}")
 
     def process_data_for_myanmar(self):
-        a = WikipediaService(url="https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Myanmar")
-        country = "Myanmar"
-        table_text = "Confirmed COVID-19 cases by Township"
-        start_row = "3"
-        table = a.search_table(table_text, index=1)
-        if start_row.isnumeric():
-            table = table[int(start_row) - 1:]
-        res = []
-        for row in table:
-            region = self.get_city_name(row[1], row[2])
-            if 'Total' in region:
-                continue
-            infected = row[3]
-            deaths = row[-1]
-            d = dict(
-                region=region,
-                infected=sanitize_digit(infected),
-                deaths=sanitize_digit(deaths),
-                recoveries="0",
-            )
-            res.append(d)
-        file_name = self.get_output_file(country)
-        cleanup(file_name)
-        self.write_output_for_country(res, country=country, file_name=file_name)
-        move_to_final(file_name)
+        try:
+            a = WikipediaService(url="https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Myanmar")
+            country = "Myanmar"
+            table_text = "Confirmed COVID-19 cases by Township"
+            start_row = "3"
+            table = a.search_table(table_text, index=1)
+            if start_row.isnumeric():
+                table = table[int(start_row) - 1:]
+            res = []
+            for row in table:
+                region = self.get_city_name(row[1], row[2])
+                if 'Total' in region:
+                    continue
+                infected = row[3]
+                deaths = row[-1]
+                d = dict(
+                    region=region,
+                    infected=sanitize_digit(infected),
+                    deaths=sanitize_digit(deaths),
+                    recoveries="0",
+                )
+                res.append(d)
+            file_name = self.get_output_file(country)
+            cleanup(file_name)
+            self.write_output_for_country(res, country=country, file_name=file_name)
+            move_to_final(file_name)
+        except Exception as e:
+            print(f"Exception fetching myanmar data: {e}")
 
     def process_data_for_philippines(self):
         a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_the_Philippines")
@@ -216,35 +228,41 @@ class MainProgram(object):
         move_to_final(file_name)
 
     def process_data_for_thailand(self):
-        a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Thailand")
-        country = "Thailand"
-        table_name = "Confirmed COVID-19 cases"
-        start_row = "3"
-        end_row = "-2"
-        region_col = "2"
-        infected_col = "3"
-        death_col = "11"
-        recovered_col = ""
-        table_index = "2"
-        z = a.process_table(table_name, start_row, end_row, region_col, infected_col, death_col, recovered_col,
-                            table_index=table_index)
-        res = []
-        for rec in z:
-            if "Total" not in rec.get("region"):
-                res.append(rec)
-        file_name = self.get_output_file(country)
-        cleanup(file_name)
-        self.write_output_for_country(res, country=country, file_name=file_name)
-        move_to_final(file_name)
+        try:
+            a = WikipediaService(url="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Thailand")
+            country = "Thailand"
+            table_name = "Confirmed COVID-19 cases"
+            start_row = "3"
+            end_row = "-2"
+            region_col = "2"
+            infected_col = "3"
+            death_col = "11"
+            recovered_col = ""
+            table_index = "2"
+            z = a.process_table(table_name, start_row, end_row, region_col, infected_col, death_col, recovered_col,
+                                table_index=table_index)
+            res = []
+            for rec in z:
+                if "Total" not in rec.get("region"):
+                    res.append(rec)
+            file_name = self.get_output_file(country)
+            cleanup(file_name)
+            self.write_output_for_country(res, country=country, file_name=file_name)
+            move_to_final(file_name)
+        except Exception as e:
+            print(f"Exception fetching thailand data: {e}")
 
     def process_data_for_usa(self):
-        wms = WorldoMeterService()
-        country = "USA"
-        records = wms.get_us_stats()
-        file_name = self.get_output_file(country)
-        cleanup(file_name)
-        self.write_output_for_country(records, country=country, file_name=file_name)
-        move_to_final(file_name)
+        try:
+            wms = WorldoMeterService()
+            country = "USA"
+            records = wms.get_us_stats()
+            file_name = self.get_output_file(country)
+            cleanup(file_name)
+            self.write_output_for_country(records, country=country, file_name=file_name)
+            move_to_final(file_name)
+        except Exception as e:
+            print(f"Exception fetching usa data: {e}")
 
     def get_active_for_row(self, row):
         active = row.get("active", "")
